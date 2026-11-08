@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  :focus-visible { @apply outline outline-[3px] outline-offset-2 outline-saffron; }
+  [lang="hi-IN"], [lang="kn-IN"], [lang="ta-IN"] { line-height: 1.7; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-ink px-4 py-2.5 font-semibold text-white transition hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-ghost {
+    @apply inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-line bg-white px-4 py-2.5 font-medium text-ink transition hover:border-ink/30 hover:bg-paper disabled:cursor-not-allowed disabled:opacity-40;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+@media print {
+  header, footer, nav, .print\:hidden { display: none !important; }
+  body * { visibility: hidden; }
+  .summary-card, .summary-card * { visibility: visible; }
+  .summary-card { position: absolute; left: 0; top: 0; width: 100%; border: 1px solid #000; }
+}

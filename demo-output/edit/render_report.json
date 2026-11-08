@@ -1,0 +1,1320 @@
+{
+ "take": "takes\\take2",
+ "outputs": [
+  {
+   "output": "gramsetu_master_16x9.mp4",
+   "format": "16x9",
+   "duration": 91.56,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "problem",
+     "start": 2.5,
+     "dur": 3.5,
+     "speed": 1.0,
+     "raw_from": 2.02,
+     "raw_to": 5.52,
+     "scene": "problem"
+    },
+    {
+     "piece": "speak",
+     "start": 6.0,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 7.3,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 22.24,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 28.06,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_q",
+     "start": 32.06,
+     "dur": 6.0,
+     "speed": 1.0,
+     "raw_from": 55.57,
+     "raw_to": 61.57,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_a_voice",
+     "start": 38.06,
+     "dur": 8.13,
+     "speed": 1.0,
+     "raw_from": 64.38,
+     "raw_to": 72.52,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_update",
+     "start": 46.19,
+     "dur": 2.0,
+     "speed": 1.0,
+     "raw_from": 74.0,
+     "raw_to": 76.0,
+     "scene": "scheme"
+    },
+    {
+     "piece": "fast_review",
+     "start": 48.19,
+     "dur": 3.0,
+     "speed": 14.76,
+     "raw_from": 75.8,
+     "raw_to": 120.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 51.19,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history",
+     "start": 54.96,
+     "dur": 7.46,
+     "speed": 1.0,
+     "raw_from": 136.91,
+     "raw_to": 144.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "otp",
+     "start": 62.42,
+     "dur": 2.88,
+     "speed": 2.0,
+     "raw_from": 150.59,
+     "raw_to": 156.35,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final",
+     "start": 65.3,
+     "dur": 7.38,
+     "speed": 1.0,
+     "raw_from": 156.38,
+     "raw_to": 163.76,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 72.68,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt",
+     "start": 74.18,
+     "dur": 9.98,
+     "speed": 1.0,
+     "raw_from": 175.08,
+     "raw_to": 185.06,
+     "scene": "scheme"
+    },
+    {
+     "piece": "hud",
+     "start": 84.16,
+     "dur": 2.8,
+     "speed": 1.0,
+     "raw_from": 190.61,
+     "raw_to": 193.41,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end",
+     "start": 86.96,
+     "dur": 4.6
+    }
+   ],
+   "audio": [
+    {
+     "file": "vo_problem.wav",
+     "kind": "narration",
+     "out": 2.8,
+     "src": 0,
+     "dur": 4.56,
+     "cut_end": false
+    },
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 7.6,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 28.26,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "f4502b834aa10418.wav",
+     "kind": "assistant",
+     "out": 32.26,
+     "src": 0.0,
+     "dur": 5.6,
+     "cut_end": false
+    },
+    {
+     "file": "kn_district.wav",
+     "kind": "user",
+     "out": 38.36,
+     "src": 0.0,
+     "dur": 2.4,
+     "cut_end": false
+    },
+    {
+     "file": "91ad3c7a4ed3b90c.wav",
+     "kind": "assistant",
+     "out": 46.41,
+     "src": 0.0,
+     "dur": 1.78,
+     "cut_end": true
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 52.41,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "3198f4aad7666386.wav",
+     "kind": "assistant",
+     "out": 65.6,
+     "src": 0.0,
+     "dur": 6.88,
+     "cut_end": false
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 74.58,
+     "src": 0.0,
+     "dur": 9.28,
+     "cut_end": false
+    },
+    {
+     "file": "vo_end.wav",
+     "kind": "narration",
+     "out": 87.36,
+     "src": 0,
+     "dur": 3.6,
+     "cut_end": false
+    }
+   ],
+   "captions": 15,
+   "checks": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ]
+  },
+  {
+   "output": "gramsetu_hook_20s_16x9.mp4",
+   "format": "16x9",
+   "duration": 20.0,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_short",
+     "start": 2.5,
+     "dur": 4.4,
+     "speed": 1.0,
+     "raw_from": 14.43,
+     "raw_to": 18.83,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_fast",
+     "start": 6.9,
+     "dur": 2.0,
+     "speed": 7.33,
+     "raw_from": 18.83,
+     "raw_to": 33.49,
+     "scene": "scheme"
+    },
+    {
+     "piece": "transcript_hold",
+     "start": 8.9,
+     "dur": 1.7,
+     "speed": 1.0,
+     "raw_from": 33.49,
+     "raw_to": 35.19,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history_short",
+     "start": 10.6,
+     "dur": 3.2,
+     "speed": 2.5,
+     "raw_from": 136.91,
+     "raw_to": 144.9,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt_short",
+     "start": 13.8,
+     "dur": 3.7,
+     "speed": 1.0,
+     "raw_from": 175.18,
+     "raw_to": 178.88,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 17.5,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 2.9,
+     "src": 0.0,
+     "dur": 4.0,
+     "cut_end": true
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 14.1,
+     "src": 0.0,
+     "dur": 3.4,
+     "cut_end": true
+    }
+   ],
+   "captions": 3,
+   "checks": []
+  },
+  {
+   "output": "gramsetu_teaser_45s.mp4",
+   "format": "16x9",
+   "duration": 43.22,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak",
+     "start": 2.5,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 3.8,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 18.74,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 24.56,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 28.56,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history_short",
+     "start": 32.33,
+     "dur": 3.2,
+     "speed": 2.5,
+     "raw_from": 136.91,
+     "raw_to": 144.9,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 35.52,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt_short",
+     "start": 37.02,
+     "dur": 3.7,
+     "speed": 1.0,
+     "raw_from": 175.18,
+     "raw_to": 178.88,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 40.72,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 4.1,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 24.76,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 29.78,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 37.32,
+     "src": 0.0,
+     "dur": 3.4,
+     "cut_end": true
+    }
+   ],
+   "captions": 6,
+   "checks": []
+  },
+  {
+   "output": "gramsetu_vertical_9x16.mp4",
+   "format": "9x16",
+   "duration": 37.92,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 2.5,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 17.44,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 23.26,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history_short",
+     "start": 27.03,
+     "dur": 3.2,
+     "speed": 2.5,
+     "raw_from": 136.91,
+     "raw_to": 144.9,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 30.22,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt_short",
+     "start": 31.72,
+     "dur": 3.7,
+     "speed": 1.0,
+     "raw_from": 175.18,
+     "raw_to": 178.88,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 35.42,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 2.8,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 24.48,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 32.02,
+     "src": 0.0,
+     "dur": 3.4,
+     "cut_end": true
+    }
+   ],
+   "captions": 5,
+   "checks": []
+  },
+  {
+   "output": "gramsetu_square_1x1.mp4",
+   "format": "1x1",
+   "duration": 91.56,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "problem",
+     "start": 2.5,
+     "dur": 3.5,
+     "speed": 1.0,
+     "raw_from": 2.02,
+     "raw_to": 5.52,
+     "scene": "problem"
+    },
+    {
+     "piece": "speak",
+     "start": 6.0,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 7.3,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 22.24,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 28.06,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_q",
+     "start": 32.06,
+     "dur": 6.0,
+     "speed": 1.0,
+     "raw_from": 55.57,
+     "raw_to": 61.57,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_a_voice",
+     "start": 38.06,
+     "dur": 8.13,
+     "speed": 1.0,
+     "raw_from": 64.38,
+     "raw_to": 72.52,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_update",
+     "start": 46.19,
+     "dur": 2.0,
+     "speed": 1.0,
+     "raw_from": 74.0,
+     "raw_to": 76.0,
+     "scene": "scheme"
+    },
+    {
+     "piece": "fast_review",
+     "start": 48.19,
+     "dur": 3.0,
+     "speed": 14.76,
+     "raw_from": 75.8,
+     "raw_to": 120.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 51.19,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history",
+     "start": 54.96,
+     "dur": 7.46,
+     "speed": 1.0,
+     "raw_from": 136.91,
+     "raw_to": 144.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "otp",
+     "start": 62.42,
+     "dur": 2.88,
+     "speed": 2.0,
+     "raw_from": 150.59,
+     "raw_to": 156.35,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final",
+     "start": 65.3,
+     "dur": 7.38,
+     "speed": 1.0,
+     "raw_from": 156.38,
+     "raw_to": 163.76,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 72.68,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt",
+     "start": 74.18,
+     "dur": 9.98,
+     "speed": 1.0,
+     "raw_from": 175.08,
+     "raw_to": 185.06,
+     "scene": "scheme"
+    },
+    {
+     "piece": "hud",
+     "start": 84.16,
+     "dur": 2.8,
+     "speed": 1.0,
+     "raw_from": 190.61,
+     "raw_to": 193.41,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end",
+     "start": 86.96,
+     "dur": 4.6
+    }
+   ],
+   "audio": [
+    {
+     "file": "vo_problem.wav",
+     "kind": "narration",
+     "out": 2.8,
+     "src": 0,
+     "dur": 4.56,
+     "cut_end": false
+    },
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 7.6,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 28.26,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "f4502b834aa10418.wav",
+     "kind": "assistant",
+     "out": 32.26,
+     "src": 0.0,
+     "dur": 5.6,
+     "cut_end": false
+    },
+    {
+     "file": "kn_district.wav",
+     "kind": "user",
+     "out": 38.36,
+     "src": 0.0,
+     "dur": 2.4,
+     "cut_end": false
+    },
+    {
+     "file": "91ad3c7a4ed3b90c.wav",
+     "kind": "assistant",
+     "out": 46.41,
+     "src": 0.0,
+     "dur": 1.78,
+     "cut_end": true
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 52.41,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "3198f4aad7666386.wav",
+     "kind": "assistant",
+     "out": 65.6,
+     "src": 0.0,
+     "dur": 6.88,
+     "cut_end": false
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 74.58,
+     "src": 0.0,
+     "dur": 9.28,
+     "cut_end": false
+    },
+    {
+     "file": "vo_end.wav",
+     "kind": "narration",
+     "out": 87.36,
+     "src": 0,
+     "dur": 3.6,
+     "cut_end": false
+    }
+   ],
+   "captions": 15,
+   "checks": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ]
+  },
+  {
+   "output": "hook_variant_A.mp4",
+   "format": "16x9",
+   "duration": 67.14,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak",
+     "start": 2.5,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 3.8,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 18.74,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 24.56,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_q",
+     "start": 28.56,
+     "dur": 6.0,
+     "speed": 1.0,
+     "raw_from": 55.57,
+     "raw_to": 61.57,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 34.56,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history",
+     "start": 38.33,
+     "dur": 7.46,
+     "speed": 1.0,
+     "raw_from": 136.91,
+     "raw_to": 144.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final",
+     "start": 45.78,
+     "dur": 7.38,
+     "speed": 1.0,
+     "raw_from": 156.38,
+     "raw_to": 163.76,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 53.16,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt",
+     "start": 54.66,
+     "dur": 9.98,
+     "speed": 1.0,
+     "raw_from": 175.08,
+     "raw_to": 185.06,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 64.64,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 4.1,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 24.76,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "f4502b834aa10418.wav",
+     "kind": "assistant",
+     "out": 28.76,
+     "src": 0.0,
+     "dur": 5.6,
+     "cut_end": false
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 35.78,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "3198f4aad7666386.wav",
+     "kind": "assistant",
+     "out": 46.08,
+     "src": 0.0,
+     "dur": 6.88,
+     "cut_end": false
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 55.06,
+     "src": 0.0,
+     "dur": 9.28,
+     "cut_end": false
+    }
+   ],
+   "captions": 10,
+   "checks": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ]
+  },
+  {
+   "output": "hook_variant_B.mp4",
+   "format": "16x9",
+   "duration": 67.14,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak",
+     "start": 2.5,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 3.8,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 18.74,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 24.56,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_q",
+     "start": 28.56,
+     "dur": 6.0,
+     "speed": 1.0,
+     "raw_from": 55.57,
+     "raw_to": 61.57,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 34.56,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history",
+     "start": 38.33,
+     "dur": 7.46,
+     "speed": 1.0,
+     "raw_from": 136.91,
+     "raw_to": 144.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final",
+     "start": 45.78,
+     "dur": 7.38,
+     "speed": 1.0,
+     "raw_from": 156.38,
+     "raw_to": 163.76,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 53.16,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt",
+     "start": 54.66,
+     "dur": 9.98,
+     "speed": 1.0,
+     "raw_from": 175.08,
+     "raw_to": 185.06,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 64.64,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 4.1,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 24.76,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "f4502b834aa10418.wav",
+     "kind": "assistant",
+     "out": 28.76,
+     "src": 0.0,
+     "dur": 5.6,
+     "cut_end": false
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 35.78,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "3198f4aad7666386.wav",
+     "kind": "assistant",
+     "out": 46.08,
+     "src": 0.0,
+     "dur": 6.88,
+     "cut_end": false
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 55.06,
+     "src": 0.0,
+     "dur": 9.28,
+     "cut_end": false
+    }
+   ],
+   "captions": 10,
+   "checks": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ]
+  },
+  {
+   "output": "hook_variant_C.mp4",
+   "format": "16x9",
+   "duration": 67.14,
+   "timeline": [
+    {
+     "piece": "hook",
+     "start": 0.0,
+     "dur": 2.5,
+     "speed": 1.0,
+     "raw_from": 136.86,
+     "raw_to": 139.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak",
+     "start": 2.5,
+     "dur": 1.3,
+     "speed": 1.0,
+     "raw_from": 10.91,
+     "raw_to": 12.21,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_voice",
+     "start": 3.8,
+     "dur": 14.94,
+     "speed": 1.0,
+     "raw_from": 14.53,
+     "raw_to": 29.47,
+     "scene": "scheme"
+    },
+    {
+     "piece": "speak_prisma",
+     "start": 18.74,
+     "dur": 5.82,
+     "speed": 1.0,
+     "raw_from": 29.27,
+     "raw_to": 35.09,
+     "scene": "scheme"
+    },
+    {
+     "piece": "understand",
+     "start": 24.56,
+     "dur": 4.0,
+     "speed": 1.0,
+     "raw_from": 36.59,
+     "raw_to": 40.59,
+     "scene": "scheme"
+    },
+    {
+     "piece": "district_q",
+     "start": 28.56,
+     "dur": 6.0,
+     "speed": 1.0,
+     "raw_from": 55.57,
+     "raw_to": 61.57,
+     "scene": "scheme"
+    },
+    {
+     "piece": "approve",
+     "start": 34.56,
+     "dur": 3.77,
+     "speed": 1.0,
+     "raw_from": 127.16,
+     "raw_to": 130.92,
+     "scene": "scheme"
+    },
+    {
+     "piece": "history",
+     "start": 38.33,
+     "dur": 7.46,
+     "speed": 1.0,
+     "raw_from": 136.91,
+     "raw_to": 144.36,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final",
+     "start": 45.78,
+     "dur": 7.38,
+     "speed": 1.0,
+     "raw_from": 156.38,
+     "raw_to": 163.76,
+     "scene": "scheme"
+    },
+    {
+     "piece": "final_click",
+     "start": 53.16,
+     "dur": 1.5,
+     "speed": 1.0,
+     "raw_from": 166.18,
+     "raw_to": 167.68,
+     "scene": "scheme"
+    },
+    {
+     "piece": "receipt",
+     "start": 54.66,
+     "dur": 9.98,
+     "speed": 1.0,
+     "raw_from": 175.08,
+     "raw_to": 185.06,
+     "scene": "scheme"
+    },
+    {
+     "piece": "end_short",
+     "start": 64.64,
+     "dur": 2.5
+    }
+   ],
+   "audio": [
+    {
+     "file": "kn_request.wav",
+     "kind": "user",
+     "out": 4.1,
+     "src": 0.0,
+     "dur": 14.24,
+     "cut_end": false
+    },
+    {
+     "file": "326f50c46827b384.wav",
+     "kind": "assistant",
+     "out": 24.76,
+     "src": 0.0,
+     "dur": 3.8,
+     "cut_end": true
+    },
+    {
+     "file": "f4502b834aa10418.wav",
+     "kind": "assistant",
+     "out": 28.76,
+     "src": 0.0,
+     "dur": 5.6,
+     "cut_end": false
+    },
+    {
+     "file": "153ce55a9812e2eb.wav",
+     "kind": "assistant",
+     "out": 35.78,
+     "src": 0.0,
+     "dur": 2.55,
+     "cut_end": true
+    },
+    {
+     "file": "3198f4aad7666386.wav",
+     "kind": "assistant",
+     "out": 46.08,
+     "src": 0.0,
+     "dur": 6.88,
+     "cut_end": false
+    },
+    {
+     "file": "d801869e53e504ad.wav",
+     "kind": "assistant",
+     "out": 55.06,
+     "src": 0.0,
+     "dur": 9.28,
+     "cut_end": false
+    }
+   ],
+   "captions": 10,
+   "checks": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ]
+  }
+ ]
+}

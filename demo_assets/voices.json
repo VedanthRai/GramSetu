@@ -1,0 +1,200 @@
+{
+ "model": "timbre-v2.5",
+ "prisma_model": "prisma-v2.5",
+ "sentences_sha": "8747c9311325c11f",
+ "utterances": {
+  "kn_request": {
+   "attempts": [
+    {
+     "id": "kn_request",
+     "voice": "Kavin",
+     "seconds": 13.44,
+     "integrated_lufs": -22.7,
+     "true_peak_dbtp": -5.4,
+     "lra": 1.7,
+     "cache": "miss",
+     "server_ms": "4532",
+     "model": "timbre-v2.5",
+     "prisma": "ನಮಸ್ಕಾರ ನಾನು ರೈತ ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್ ಬೆಂಗಳೂರು ಕಡೆ ಊರು ಹಾರೋಹಳ್ಳಿ ಎರಡು ಎಕರೆ ಜಮೀನು ಇದೆ ನನ್ನ ಹೆಸರಲ್ಲೇ ಬ್ಯಾಂಕ್ ಖಾತೆಯೂ ಇದೆ ಪಿ ಎಂ ಕಿಸಾನ್ ಡೆಮೋ ಫಾರ್ಮ್ ತುಂಬೋಕ್ಕೆ ಸಹಾಯ ಮಾಡಿ",
+     "prisma_ms": 1879,
+     "cer": 0.026
+    },
+    {
+     "id": "kn_request",
+     "voice": "Saanvi",
+     "seconds": 10.88,
+     "integrated_lufs": -16.9,
+     "true_peak_dbtp": -1.2,
+     "lra": 3.3,
+     "cache": "miss",
+     "server_ms": "3718",
+     "model": "timbre-v2.5",
+     "prisma": "ನಮಸ್ಕಾರ ನಾನು ರೈತ ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್ ಬೆಂಗಳೂರು ಕಡೆ ಊರು ಹಾರೋಹಳ್ಳಿ ಎರಡು ಎಕರೆ ಜಮೀನು ಇದೆ ನನ್ನ ಹೆಸರಲ್ಲೇ ಬ್ಯಾಂಕ್ ಖಾತೆಯೂ ಇದೆ ಪಿ ಎಂ ಕಿಸಾನ್ ಡೆಮೋ ಫಾರ್ಮ್ ತುಂಬೋಕೆ ಸಹಾಯ ಮಾಡಿ",
+     "prisma_ms": 1673,
+     "cer": 0.013
+    }
+   ],
+   "chosen_voice": "Kavin",
+   "accepted": true,
+   "cer": 0.026,
+   "prisma": "ನಮಸ್ಕಾರ ನಾನು ರೈತ ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್ ಬೆಂಗಳೂರು ಕಡೆ ಊರು ಹಾರೋಹಳ್ಳಿ ಎರಡು ಎಕರೆ ಜಮೀನು ಇದೆ ನನ್ನ ಹೆಸರಲ್ಲೇ ಬ್ಯಾಂಕ್ ಖಾತೆಯೂ ಇದೆ ಪಿ ಎಂ ಕಿಸಾನ್ ಡೆಮೋ ಫಾರ್ಮ್ ತುಂಬೋಕ್ಕೆ ಸಹಾಯ ಮಾಡಿ"
+  },
+  "kn_district": {
+   "attempts": [
+    {
+     "id": "kn_district",
+     "voice": "Kavin",
+     "seconds": 1.6,
+     "integrated_lufs": -21.4,
+     "true_peak_dbtp": -9.6,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1777",
+     "model": "timbre-v2.5",
+     "prisma": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ",
+     "prisma_ms": 1142,
+     "cer": 0.0
+    },
+    {
+     "id": "kn_district",
+     "voice": "Saanvi",
+     "seconds": 1.44,
+     "integrated_lufs": -16.0,
+     "true_peak_dbtp": -0.7,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1877",
+     "model": "timbre-v2.5",
+     "prisma": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ",
+     "prisma_ms": 1247,
+     "cer": 0.0
+    }
+   ],
+   "chosen_voice": "Kavin",
+   "accepted": true,
+   "cer": 0.0,
+   "prisma": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ"
+  },
+  "kn_confirm": {
+   "attempts": [
+    {
+     "id": "kn_confirm",
+     "voice": "Kavin",
+     "seconds": 1.76,
+     "integrated_lufs": -23.8,
+     "true_peak_dbtp": -8.4,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1874",
+     "model": "timbre-v2.5",
+     "prisma": "ಹೌದು ಎಲ್ಲ ಸರಿ ಇದೆ",
+     "prisma_ms": 4274,
+     "cer": 0.0
+    },
+    {
+     "id": "kn_confirm",
+     "voice": "Saanvi",
+     "seconds": 1.76,
+     "integrated_lufs": -17.9,
+     "true_peak_dbtp": -2.3,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "2094",
+     "model": "timbre-v2.5",
+     "prisma": "ಹೌದು ಎಲ್ಲ ಸರಿ ಇದೆ",
+     "prisma_ms": 1483,
+     "cer": 0.0
+    }
+   ],
+   "chosen_voice": "Kavin",
+   "accepted": true,
+   "cer": 0.0,
+   "prisma": "ಹೌದು ಎಲ್ಲ ಸರಿ ಇದೆ"
+  },
+  "hi_clinic": {
+   "attempts": [
+    {
+     "id": "hi_clinic",
+     "voice": "Deepak",
+     "seconds": 1.92,
+     "integrated_lufs": -13.8,
+     "true_peak_dbtp": -0.1,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1755",
+     "model": "timbre-v2.5",
+     "prisma": "मुझे कल सुबह डॉक्टर को दिखाना है।",
+     "prisma_ms": 1101,
+     "cer": 0.0
+    },
+    {
+     "id": "hi_clinic",
+     "voice": "Vikrant",
+     "seconds": 1.92,
+     "integrated_lufs": -16.0,
+     "true_peak_dbtp": -0.9,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1948",
+     "model": "timbre-v2.5",
+     "prisma": "मुझे कल सुबह डॉक्टर को दिखाना है।",
+     "prisma_ms": 1309,
+     "cer": 0.0
+    },
+    {
+     "id": "hi_clinic",
+     "voice": "Bhavna",
+     "seconds": 2.24,
+     "integrated_lufs": -22.6,
+     "true_peak_dbtp": -4.6,
+     "lra": 0.0,
+     "cache": "miss",
+     "server_ms": "1837",
+     "model": "timbre-v2.5",
+     "prisma": "मुझे कल सुबह डॉक्टर को दिखाना है।",
+     "prisma_ms": 1341,
+     "cer": 0.0
+    }
+   ],
+   "chosen_voice": "Deepak",
+   "accepted": true,
+   "cer": 0.0,
+   "prisma": "मुझे कल सुबह डॉक्टर को दिखाना है।"
+  }
+ },
+ "narration": {
+  "vo_problem": {
+   "text": "Many people know exactly what they need. The English-only form is what stops them.",
+   "voice": "Pranav",
+   "seconds": 4.56
+  },
+  "vo_end": {
+   "text": "GramSetu. Built with Gnani Prisma and Timbre.",
+   "voice": "Pranav",
+   "seconds": 3.6
+  }
+ },
+ "chosen_user_voice": {
+  "kn-IN": "Kavin",
+  "hi-IN": "Deepak"
+ },
+ "chosen_narration_voice": "Pranav",
+ "narration_audition": {
+  "Pranav": {
+   "seconds": 4.16,
+   "integrated_lufs": -14.6,
+   "true_peak_dbtp": -0.0,
+   "lra": 1.9,
+   "prisma": "many people know exactly what they need the english only form is what stops them",
+   "cer": 0.0
+  },
+  "Kaveri": {
+   "seconds": 4.16,
+   "integrated_lufs": -14.8,
+   "true_peak_dbtp": -0.6,
+   "lra": 1.5,
+   "prisma": "many people know exactly what they need the english only form is what stops them",
+   "cer": 0.0
+  }
+ }
+}

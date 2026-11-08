@@ -1,0 +1,67 @@
+"""Explicit conversation state machine. Illegal transitions raise IllegalTransition."""
+from __future__ import annotations
+
+from enum import Enum
+
+
+class State(str, Enum):
+    IDLE = "IDLE"
+    AWAITING_MIC_PERMISSION = "AWAITING_MIC_PERMISSION"
+    LISTENING = "LISTENING"
+    TRANSCRIBING = "TRANSCRIBING"
+    INTERPRETING = "INTERPRETING"
+    NEEDS_CLARIFICATION = "NEEDS_CLARIFICATION"
+    PREVIEWING_TASK = "PREVIEWING_TASK"
+    AWAITING_CONSENT = "AWAITING_CONSENT"
+    EXECUTING = "EXECUTING"
+    AWAITING_USER_ACTION = "AWAITING_USER_ACTION"
+    PAUSED_FOR_CONFIRMATION = "PAUSED_FOR_CONFIRMATION"
+    VERIFYING = "VERIFYING"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    CANCELLED = "CANCELLED"
+
+
+S = State
+_TERMINAL = {S.COMPLETED, S.FAILED, S.CANCELLED}
+_DIALOGUE = {S.IDLE, S.NEEDS_CLARIFICATION, S.PREVIEWING_TASK, S.AWAITING_CONSENT}
+
+TRANSITIONS: dict[State, set[State]] = {
+    S.IDLE: {S.AWAITING_MIC_PERMISSION, S.LISTENING, S.TRANSCRIBING, S.INTERPRETING},
+    S.AWAITING_MIC_PERMISSION: {S.LISTENING, S.IDLE},
+    S.LISTENING: {S.TRANSCRIBING, S.IDLE},
+    S.TRANSCRIBING: {S.INTERPRETING, S.IDLE, S.NEEDS_CLARIFICATION, S.PREVIEWING_TASK},
+    S.INTERPRETING: {S.NEEDS_CLARIFICATION, S.PREVIEWING_TASK, S.IDLE, S.FAILED, S.COMPLETED},
+    S.NEEDS_CLARIFICATION: {S.INTERPRETING, S.LISTENING, S.TRANSCRIBING},
+    S.PREVIEWING_TASK: {S.INTERPRETING, S.AWAITING_CONSENT, S.LISTENING, S.TRANSCRIBING},
+    S.AWAITING_CONSENT: {S.EXECUTING, S.INTERPRETING, S.PREVIEWING_TASK},
+    S.EXECUTING: {S.AWAITING_USER_ACTION, S.PAUSED_FOR_CONFIRMATION, S.VERIFYING, S.FAILED},
+    S.AWAITING_USER_ACTION: {S.EXECUTING, S.FAILED},
+    S.PAUSED_FOR_CONFIRMATION: {S.EXECUTING, S.FAILED},
+    S.VERIFYING: {S.COMPLETED, S.FAILED, S.EXECUTING},
+    S.COMPLETED: {S.IDLE},
+    S.FAILED: {S.IDLE},
+    S.CANCELLED: {S.IDLE},
+}
+# Cancellation is allowed from every non-terminal state.
+for _s in State:
+    if _s not in _TERMINAL:
+        TRANSITIONS[_s].add(S.CANCELLED)
+
+
+class IllegalTransition(ValueError):
+    pass
+
+
+def check_transition(current: State, target: State) -> State:
+    if target not in TRANSITIONS[current]:
+        raise IllegalTransition(f"{current.value} -> {target.value} is not allowed")
+    return target
+
+
+def is_dialogue_state(s: State) -> bool:
+    return s in _DIALOGUE
+
+
+def is_terminal(s: State) -> bool:
+    return s in _TERMINAL

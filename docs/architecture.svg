@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" width="1400" height="760" font-family="Noto Sans, Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#14213a"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f8a4c"/></marker>
+    <style>
+      .box{fill:#fffdf8;stroke:#14213a;stroke-width:2.5;rx:14}
+      .gn{fill:#fff1e2;stroke:#e07b1a;stroke-width:3}
+      .gate{fill:#e9f6ee;stroke:#1f8a4c;stroke-width:3}
+      .t{font-size:21px;font-weight:700;fill:#14213a}
+      .s{font-size:15px;fill:#3b4a63}
+      .l{font-size:14px;fill:#14213a;font-weight:600}
+      .ln{stroke:#14213a;stroke-width:2.5;fill:none}
+      .lg{stroke:#1f8a4c;stroke-width:2.5;fill:none;stroke-dasharray:7 5}
+      .h{font-size:28px;font-weight:800;fill:#14213a}
+    </style>
+  </defs>
+  <rect width="1400" height="760" fill="#f6f1e8"/>
+  <text x="40" y="52" class="h">GramSetu: voice → understanding → safe browser action → spoken result</text>
+  <text x="40" y="82" class="s">Orange = Gnani models (live API calls). Green = gates the user controls. Portals are local demo sites with synthetic data.</text>
+
+  <!-- row 1 -->
+  <rect x="40" y="130" width="200" height="110" rx="14" class="box"/>
+  <text x="140" y="175" text-anchor="middle" class="t">User voice</text>
+  <text x="140" y="200" text-anchor="middle" class="s">Kannada · Hindi</text>
+  <text x="140" y="220" text-anchor="middle" class="s">Tamil · English</text>
+
+  <rect x="300" y="130" width="230" height="110" rx="14" class="gn"/>
+  <text x="415" y="168" text-anchor="middle" class="t">Gnani Prisma</text>
+  <text x="415" y="193" text-anchor="middle" class="s">speech-to-text</text>
+  <text x="415" y="215" text-anchor="middle" class="s">POST /stt/v3 · prisma-v2.5</text>
+
+  <rect x="590" y="130" width="230" height="110" rx="14" class="gate"/>
+  <text x="705" y="165" text-anchor="middle" class="t">Editable transcript</text>
+  <text x="705" y="190" text-anchor="middle" class="s">user checks the words</text>
+  <text x="705" y="212" text-anchor="middle" class="s">before anything happens</text>
+
+  <rect x="880" y="130" width="230" height="110" rx="14" class="box"/>
+  <text x="995" y="165" text-anchor="middle" class="t">Reasoning provider</text>
+  <text x="995" y="190" text-anchor="middle" class="s">Claude (optional) or</text>
+  <text x="995" y="212" text-anchor="middle" class="s">rules engine (no AI model)</text>
+
+  <rect x="1160" y="130" width="200" height="110" rx="14" class="box"/>
+  <text x="1260" y="165" text-anchor="middle" class="t">Pydantic</text>
+  <text x="1260" y="190" text-anchor="middle" class="s">strict contracts +</text>
+  <text x="1260" y="212" text-anchor="middle" class="s">state machine</text>
+
+  <path d="M240 185H296" class="ln" marker-end="url(#a)"/>
+  <path d="M530 185H586" class="ln" marker-end="url(#a)"/>
+  <path d="M820 185H876" class="ln" marker-end="url(#a)"/>
+  <path d="M1110 185H1156" class="ln" marker-end="url(#a)"/>
+
+  <!-- row 2 -->
+  <rect x="1160" y="320" width="200" height="120" rx="14" class="gn"/>
+  <text x="1260" y="355" text-anchor="middle" class="t">Gnani Timbre</text>
+  <text x="1260" y="380" text-anchor="middle" class="s">asks only what is</text>
+  <text x="1260" y="400" text-anchor="middle" class="s">missing · timbre-v2.5</text>
+  <text x="1260" y="420" text-anchor="middle" class="s">/api/v1/tts/inference</text>
+  <path d="M1260 240V316" class="ln" marker-end="url(#a)"/>
+
+  <rect x="880" y="320" width="230" height="120" rx="14" class="gate"/>
+  <text x="995" y="358" text-anchor="middle" class="t">Approval gate 1</text>
+  <text x="995" y="384" text-anchor="middle" class="s">review summary, then</text>
+  <text x="995" y="406" text-anchor="middle" class="s">"Approve and start"</text>
+  <path d="M1160 380H1114" class="ln" marker-end="url(#a)"/>
+
+  <rect x="590" y="320" width="230" height="120" rx="14" class="box"/>
+  <text x="705" y="355" text-anchor="middle" class="t">Policy validator</text>
+  <text x="705" y="380" text-anchor="middle" class="s">12-action allow-list,</text>
+  <text x="705" y="402" text-anchor="middle" class="s">same-origin only, page text</text>
+  <text x="705" y="424" text-anchor="middle" class="s">treated as data</text>
+  <path d="M880 380H824" class="ln" marker-end="url(#a)"/>
+
+  <rect x="300" y="320" width="230" height="120" rx="14" class="box"/>
+  <text x="415" y="355" text-anchor="middle" class="t">Playwright agent</text>
+  <text x="415" y="380" text-anchor="middle" class="s">isolated context, fills the</text>
+  <text x="415" y="402" text-anchor="middle" class="s">demo portal, recovers from</text>
+  <text x="415" y="424" text-anchor="middle" class="s">validation errors once</text>
+  <path d="M590 380H534" class="ln" marker-end="url(#a)"/>
+
+  <rect x="40" y="320" width="200" height="120" rx="14" class="box"/>
+  <text x="140" y="358" text-anchor="middle" class="t">Mission Control</text>
+  <text x="140" y="384" text-anchor="middle" class="s">live screenshots +</text>
+  <text x="140" y="406" text-anchor="middle" class="s">audit timeline</text>
+  <path d="M300 380H244" class="ln" marker-end="url(#a)"/>
+
+  <!-- row 3 -->
+  <rect x="300" y="520" width="230" height="120" rx="14" class="gate"/>
+  <text x="415" y="556" text-anchor="middle" class="t">OTP pause</text>
+  <text x="415" y="581" text-anchor="middle" class="s">user types the code;</text>
+  <text x="415" y="603" text-anchor="middle" class="s">never logged, spoken or</text>
+  <text x="415" y="625" text-anchor="middle" class="s">sent to any model</text>
+  <path d="M415 440V516" class="lg" marker-end="url(#g)"/>
+
+  <rect x="590" y="520" width="230" height="120" rx="14" class="gate"/>
+  <text x="705" y="556" text-anchor="middle" class="t">Approval gate 2</text>
+  <text x="705" y="581" text-anchor="middle" class="s">final submit only after</text>
+  <text x="705" y="603" text-anchor="middle" class="s">explicit approval</text>
+  <path d="M530 580H586" class="lg" marker-end="url(#g)"/>
+
+  <rect x="880" y="520" width="230" height="120" rx="14" class="gate"/>
+  <text x="995" y="556" text-anchor="middle" class="t">Verification gate</text>
+  <text x="995" y="581" text-anchor="middle" class="s">"done" only when the</text>
+  <text x="995" y="603" text-anchor="middle" class="s">portal's stored record</text>
+  <text x="995" y="625" text-anchor="middle" class="s">is found (SQLite)</text>
+  <path d="M820 580H876" class="lg" marker-end="url(#g)"/>
+
+  <rect x="1160" y="520" width="200" height="120" rx="14" class="gn"/>
+  <text x="1260" y="556" text-anchor="middle" class="t">Gnani Timbre</text>
+  <text x="1260" y="581" text-anchor="middle" class="s">reads the verified</text>
+  <text x="1260" y="603" text-anchor="middle" class="s">demo receipt aloud</text>
+  <path d="M1110 580H1156" class="ln" marker-end="url(#a)"/>
+
+  <text x="40" y="700" class="l">Guards on every turn: OTP/scam and emergency detection (deterministic, before any model) · digits redacted before reasoning · usage guard, 1 retry max, TTS cache.</text>
+  <text x="40" y="728" class="l">Code: backend/app/services/{speech, reasoning, browser, orchestrator.py} · backend/app/security/guards.py · frontend/src/components/MissionControl.tsx</text>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "retrieval_note": "Retrieved by rendering https://pmkisan.gov.in/ in a real browser on 2026-11-08 (the site serves an incomplete TLS chain, so plain HTTP clients fail verification; verification was NOT disabled). Statements below are copied verbatim from the page text. Nothing here was written from memory.",
+  "schemes": [
+    {
+      "scheme_id": "pm_kisan",
+      "official_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "official_source_url": "https://pmkisan.gov.in/",
+      "source_title": "PM-Kisan Samman Nidhi — home page, 'PM-KISAN Scheme' and 'Scheme Exclusion' sections",
+      "jurisdiction": "Government of India — Department of Agriculture and Farmers Welfare",
+      "retrieved_at": "2026-11-08T00:00:00+05:30",
+      "last_verified_at": "2026-11-08T00:00:00+05:30",
+      "status": "verified",
+      "statements": [
+        {"id": "pmk-1", "kind": "about", "text": "PM Kisan is a Central Sector scheme with 100% funding from Government of India."},
+        {"id": "pmk-2", "kind": "benefit", "text": "Under the scheme an income support of 6,000/- per year in three equal installments will be provided to all land holding farmer families."},
+        {"id": "pmk-3", "kind": "eligibility", "text": "Definition of family for the scheme is husband, wife and minor children."},
+        {"id": "pmk-4", "kind": "eligibility", "text": "State Government and UT administration will identify the farmer families which are eligible for support as per scheme guidelines."},
+        {"id": "pmk-5", "kind": "benefit", "text": "The fund will be directly transferred to the bank accounts of the beneficiaries."},
+        {"id": "pmk-6", "kind": "exclusion", "text": "All Institutional Land holders."},
+        {"id": "pmk-7", "kind": "exclusion", "text": "All Persons who paid Income Tax in last assessment year"},
+        {"id": "pmk-8", "kind": "exclusion", "text": "All superannuated/retired pensioners whose monthly pension is Rs.10,000/-or more (Excluding Multi Tasking Staff / Class IV/Group D employees) of above category"},
+        {"id": "pmk-9", "kind": "exclusion", "text": "Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects registered with Professional bodies and carrying out profession by undertaking practices."},
+        {"id": "pmk-10", "kind": "requirement", "text": "eKYC is MANDATORY for PMKISAN Registered Farmers."},
+        {"id": "pmk-11", "kind": "process", "text": "The site's 'Farmers Corner' offers 'New Farmer Registration' and 'Know Your Status'."}
+      ],
+      "required_documents": {
+        "status": "verification pending",
+        "note": "The official home page does not list required documents. GramSetu does not state a document list until one is verified from an official source."
+      },
+      "verification_notes": "Eligibility is decided by State/UT administration per scheme guidelines; GramSetu never declares a person eligible."
+    }
+  ]
+}

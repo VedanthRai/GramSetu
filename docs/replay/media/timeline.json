@@ -1,0 +1,432 @@
+[
+{
+"t": 33.5,
+"actor": "prisma",
+"text": "Prisma: voice transcribed (••• ms)"
+},
+{
+"t": 36.7,
+"actor": "reasoning",
+"text": "Reasoning: intent identified — scheme_application"
+},
+{
+"t": 36.7,
+"actor": "gramsetu",
+"text": "GramSetu: 6 field(s) updated"
+},
+{
+"t": 36.7,
+"actor": "gramsetu",
+"text": "GramSetu: missing field detected — district_ambiguous"
+},
+{
+"t": 36.7,
+"actor": "timbre",
+"text": "Timbre: guidance spoken (cache)"
+},
+{
+"t": 55.7,
+"actor": "timbre",
+"text": "Timbre: clarification spoken (cache)"
+},
+{
+"t": 70.8,
+"actor": "prisma",
+"text": "Prisma: voice transcribed (••• ms)"
+},
+{
+"t": 74.1,
+"actor": "reasoning",
+"text": "Reasoning: intent identified — provide_info"
+},
+{
+"t": 74.1,
+"actor": "gramsetu",
+"text": "GramSetu: 1 field(s) updated"
+},
+{
+"t": 74.2,
+"actor": "gramsetu",
+"text": "GramSetu: missing field detected — mobile"
+},
+{
+"t": 74.2,
+"actor": "timbre",
+"text": "Timbre: clarification spoken (cache)"
+},
+{
+"t": 83.9,
+"actor": "reasoning",
+"text": "Reasoning: intent identified — provide_info"
+},
+{
+"t": 83.9,
+"actor": "gramsetu",
+"text": "GramSetu: 1 field(s) updated"
+},
+{
+"t": 84.0,
+"actor": "gramsetu",
+"text": "GramSetu: review summary ready"
+},
+{
+"t": 84.0,
+"actor": "timbre",
+"text": "Timbre: review spoken (cache)"
+},
+{
+"t": 116.7,
+"actor": "prisma",
+"text": "Prisma: voice transcribed (278 ms)"
+},
+{
+"t": 119.7,
+"actor": "reasoning",
+"text": "Reasoning: intent identified — confirm"
+},
+{
+"t": 119.8,
+"actor": "user",
+"text": "User: confirmed the review summary (voice)"
+},
+{
+"t": 119.8,
+"actor": "timbre",
+"text": "Timbre: consent spoken (cache)"
+},
+{
+"t": 128.2,
+"actor": "user",
+"text": "User: approved starting the task (button)"
+},
+{
+"t": 128.3,
+"actor": "policy",
+"text": "Policy: plan approved — 19 actions, all within /portal/scheme"
+},
+{
+"t": 128.3,
+"actor": "timbre",
+"text": "Timbre: progress spoken (cache)"
+},
+{
+"t": 128.4,
+"actor": "browser",
+"text": "Browser: isolated context opened"
+},
+{
+"t": 128.5,
+"actor": "browser",
+"text": "Open the demo scheme portal start page."
+},
+{
+"t": 128.5,
+"actor": "policy",
+"text": "Policy: page contains instruction-like text aimed at AI agents — treated as data and ignored"
+},
+{
+"t": 128.6,
+"actor": "browser",
+"text": "Browser: portal opened"
+},
+{
+"t": 128.7,
+"actor": "browser",
+"text": "Browser: portal opened"
+},
+{
+"t": 128.7,
+"actor": "browser",
+"text": "Show you the portal before anything is entered."
+},
+{
+"t": 128.7,
+"actor": "browser",
+"text": "Browser: screenshot"
+},
+{
+"t": 128.7,
+"actor": "browser",
+"text": "Begin a new demo application."
+},
+{
+"t": 128.9,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 128.9,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 128.9,
+"actor": "browser",
+"text": "Enter the applicant name you gave."
+},
+{
+"t": 128.9,
+"actor": "browser",
+"text": "Browser: field filled"
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Choose the state you told me."
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Browser: option selected"
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Choose the district you confirmed."
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Browser: option selected"
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Enter your village name."
+},
+{
+"t": 129.0,
+"actor": "browser",
+"text": "Browser: field filled"
+},
+{
+"t": 129.1,
+"actor": "browser",
+"text": "Save applicant details and continue."
+},
+{
+"t": 129.1,
+"actor": "browser",
+"text": "Browser: details entered on this page"
+},
+{
+"t": 129.3,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 129.3,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 129.3,
+"actor": "browser",
+"text": "Enter the land area you told me."
+},
+{
+"t": 129.3,
+"actor": "browser",
+"text": "Browser: field filled"
+},
+{
+"t": 129.4,
+"actor": "browser",
+"text": "Mark how the land is held, as you said."
+},
+{
+"t": 129.4,
+"actor": "browser",
+"text": "Browser: option marked"
+},
+{
+"t": 129.4,
+"actor": "browser",
+"text": "Record whether you have a bank account."
+},
+{
+"t": 129.5,
+"actor": "browser",
+"text": "Browser: option marked"
+},
+{
+"t": 129.5,
+"actor": "browser",
+"text": "Save land details and continue."
+},
+{
+"t": 129.5,
+"actor": "browser",
+"text": "Browser: details entered on this page"
+},
+{
+"t": 129.6,
+"actor": "browser",
+"text": "Browser: validation error — Enter the land area with two decimal places, for example 2.00"
+},
+{
+"t": 129.7,
+"actor": "browser",
+"text": "Browser: the portal's validation error"
+},
+{
+"t": 129.8,
+"actor": "browser",
+"text": "Browser: corrected value entered (2.00)"
+},
+{
+"t": 129.8,
+"actor": "browser",
+"text": "Browser: validation error, recovered (entered 2.00)"
+},
+{
+"t": 129.9,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 129.9,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 129.9,
+"actor": "browser",
+"text": "Enter the demo mobile number for verification."
+},
+{
+"t": 130.0,
+"actor": "browser",
+"text": "Browser: field filled"
+},
+{
+"t": 130.0,
+"actor": "browser",
+"text": "Ask the demo portal to send a one-time code."
+},
+{
+"t": 130.0,
+"actor": "browser",
+"text": "Browser: details entered on this page"
+},
+{
+"t": 130.2,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 130.2,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 130.2,
+"actor": "browser",
+"text": "Only you may enter a one-time code. GramSetu never reads, stores or sends it."
+},
+{
+"t": 130.3,
+"actor": "browser",
+"text": "Browser: waiting for you to enter the code"
+},
+{
+"t": 130.3,
+"actor": "browser",
+"text": "Browser: paused — waiting for you to enter the code"
+},
+{
+"t": 133.0,
+"actor": "timbre",
+"text": "Timbre: user_action spoken (cache)"
+},
+{
+"t": 156.2,
+"actor": "user",
+"text": "User: entered the code in the secure box (not recorded)"
+},
+{
+"t": 156.3,
+"actor": "user",
+"text": "User: completed verification (code not recorded)"
+},
+{
+"t": 156.3,
+"actor": "browser",
+"text": "Final submission needs your explicit approval."
+},
+{
+"t": 156.4,
+"actor": "browser",
+"text": "Browser: paused for your approval"
+},
+{
+"t": 156.5,
+"actor": "browser",
+"text": "Browser: paused for your approval"
+},
+{
+"t": 156.6,
+"actor": "timbre",
+"text": "Timbre: approval spoken (cache)"
+},
+{
+"t": 168.0,
+"actor": "user",
+"text": "User: approved submission"
+},
+{
+"t": 168.0,
+"actor": "browser",
+"text": "Accept the demo declaration, which you approved."
+},
+{
+"t": 168.0,
+"actor": "browser",
+"text": "Browser: option marked"
+},
+{
+"t": 168.1,
+"actor": "browser",
+"text": "Submit the demo application, which you approved."
+},
+{
+"t": 168.1,
+"actor": "browser",
+"text": "Browser: details entered on this page"
+},
+{
+"t": 168.3,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 168.3,
+"actor": "browser",
+"text": "Browser: step completed"
+},
+{
+"t": 168.3,
+"actor": "browser",
+"text": "Check the portal stored a record before saying it is done."
+},
+{
+"t": 168.4,
+"actor": "browser",
+"text": "Verifier: evidence captured"
+},
+{
+"t": 168.5,
+"actor": "verifier",
+"text": "Verifier: record found — demo application GS-SC-57A608 stored"
+},
+{
+"t": 168.7,
+"actor": "timbre",
+"text": "Timbre: progress spoken (cache)"
+},
+{
+"t": 175.4,
+"actor": "timbre",
+"text": "Timbre: success spoken (••• ms)"
+}
+]

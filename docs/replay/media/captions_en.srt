@@ -1,0 +1,60 @@
+1
+00:00:02,800 --> 00:00:07,360
+Many people know exactly what they need. The English-only form is what stops them.
+
+2
+00:00:07,600 --> 00:00:12,347
+Hello. I'm a farmer, my name is Ramesh Kumar. From the Bengaluru side, village Harohalli.
+
+3
+00:00:12,347 --> 00:00:17,093
+I have two acres of land, in my own name. I have a bank account too.
+
+4
+00:00:17,093 --> 00:00:21,840
+Please help me fill the PM-KISAN demo form.
+
+5
+00:00:28,261 --> 00:00:32,060
+From the official PM-KISAN website: the scheme gives income support of 6,000 rupees per year
+
+6
+00:00:32,260 --> 00:00:37,860
+Bengaluru has more than one district: Bengaluru Urban, Bengaluru Rural. Which one?
+
+7
+00:00:38,360 --> 00:00:40,760
+Bengaluru Rural.
+
+8
+00:00:46,412 --> 00:00:48,194
+Which mobile number should the demo portal send the verification code to? You can type it.
+
+9
+00:00:48,194 --> 00:00:51,194
+Mobile typed (synthetic) · summary read back · user confirms by voice
+
+10
+00:00:52,410 --> 00:00:54,961
+Opening the demo portal now. You can watch every step in Mission Control.
+
+11
+00:01:05,599 --> 00:01:09,039
+Everything is filled. Final step: submit the demo application. This creates a demo record.
+
+12
+00:01:09,039 --> 00:01:12,479
+Do you approve?
+
+13
+00:01:14,579 --> 00:01:19,219
+Done. The demo portal stored your application. Demo reference: GS-SC-57A608.
+
+14
+00:01:19,219 --> 00:01:23,859
+This is a demo record, not an official application.
+
+15
+00:01:27,359 --> 00:01:30,959
+GramSetu. Built with Gnani Prisma and Timbre.
+

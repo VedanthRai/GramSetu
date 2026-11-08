@@ -1,0 +1,20 @@
+{
+  "_note": "Edit these, then run `bash scripts/build_video.sh` (or `make video`) to regenerate the voices, re-record, re-edit and re-export everything. All lines are [pending native review]. All voices are AI-generated with Gnani Timbre.",
+  "user_voice_candidates": {"kn-IN": ["Kavin", "Saanvi"], "hi-IN": ["Deepak", "Vikrant", "Bhavna"]},
+  "narration_voice_candidates": {"en-IN": ["Pranav", "Kaveri"]},
+  "utterances": [
+    {"id": "kn_request", "language": "kn-IN", "task": "Workflow A (scheme form): the opening spoken request",
+     "native": "ನಮಸ್ಕಾರ. ನಾನು ರೈತ, ನನ್ನ ಹೆಸರು ರಮೇಶ್ ಕುಮಾರ್. ಬೆಂಗಳೂರು ಕಡೆ, ಊರು ಹಾರೋಹಳ್ಳಿ. ಎರಡು ಎಕರೆ ಜಮೀನು ಇದೆ, ನನ್ನ ಹೆಸರಲ್ಲೇ. ಬ್ಯಾಂಕ್ ಖಾತೆನೂ ಇದೆ. ಪಿಎಂ ಕಿಸಾನ್ ಡೆಮೊ ಫಾರ್ಮ್ ತುಂಬೋಕೆ ಸಹಾಯ ಮಾಡಿ.",
+     "english": "Hello. I'm a farmer, my name is Ramesh Kumar. From the Bengaluru side, village Harohalli. I have two acres of land, in my own name. I have a bank account too. Please help me fill the PM-KISAN demo form."},
+    {"id": "kn_district", "language": "kn-IN", "task": "Workflow A: answer to the 'which Bengaluru district?' clarification",
+     "native": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ.", "english": "Bengaluru Rural."},
+    {"id": "kn_confirm", "language": "kn-IN", "task": "Workflow A: confirming the summary",
+     "native": "ಹೌದು, ಎಲ್ಲಾ ಸರಿ ಇದೆ.", "english": "Yes, everything is correct."},
+    {"id": "hi_clinic", "language": "hi-IN", "task": "Workflow B (clinic booking montage): the spoken request",
+     "native": "मुझे कल सुबह डॉक्टर को दिखाना है।", "english": "I need to see a doctor tomorrow morning."}
+  ],
+  "narration": [
+    {"id": "vo_problem", "language": "en-IN", "text": "Many people know exactly what they need. The English-only form is what stops them."},
+    {"id": "vo_end", "language": "en-IN", "text": "GramSetu. Built with Gnani Prisma and Timbre."}
+  ]
+}

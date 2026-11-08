@@ -1,0 +1,170 @@
+[
+  {
+    "run_at": "2026-11-08T11:21:46+0530",
+    "calls": [
+      {
+        "api": "stt",
+        "lang": "hi-IN",
+        "status": 200,
+        "latency_s": 0.29,
+        "headers_of_interest": {},
+        "response": {
+          "success": true,
+          "request_id": "01a1b9b6-77f8-75ac-a5bd-97c42c9669e7",
+          "transcript": "मैं किसान हूँ, मेरे पास 2 एकड़ ज़मीन है।",
+          "model": "prisma-v2.5",
+          "processing_time": 0.10019040107727051,
+          "end_to_end_latency": 0.1136171817779541,
+          "output": {
+            "literal": "मैं किसान हूँ, मेरे पास दो एकड़ ज़मीन है।"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "run_at": "2026-11-08T11:21:59+0530",
+    "calls": [
+      {
+        "api": "tts",
+        "lang": "kn-IN",
+        "voice": "Saanvi",
+        "status": 200,
+        "latency_s": 2.714,
+        "content_type": "audio/wav",
+        "bytes": 97324,
+        "chars": 46,
+        "headers_of_interest": {},
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 3.04,
+        "header_declared_frames_bogus": true
+      },
+      {
+        "api": "stt",
+        "lang": "kn-IN",
+        "status": 200,
+        "latency_s": 1.46,
+        "headers_of_interest": {},
+        "response": {
+          "success": true,
+          "request_id": "01a1b9b6-a768-7e85-b5e8-3e6cbde60944",
+          "transcript": "ನನಗೆ ನಾಳೆ ಬೆಳಿಗ್ಗೆ ವೈದ್ಯರ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಕು",
+          "model": "prisma-v2.5",
+          "processing_time": 0.12392783164978027,
+          "end_to_end_latency": 0.7069923877716064
+        }
+      }
+    ]
+  },
+  {
+    "run_at": "2026-11-08T12:33:49+0530",
+    "calls": [
+      {
+        "api": "tts",
+        "lang": "ta-IN",
+        "voice": "Asmita",
+        "status": 200,
+        "latency_s": 1.918,
+        "content_type": "audio/wav",
+        "bytes": 81964,
+        "chars": 47,
+        "headers_of_interest": {},
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 2.56,
+        "header_declared_frames_bogus": true
+      },
+      {
+        "api": "stt",
+        "lang": "ta-IN",
+        "status": 200,
+        "latency_s": 0.892,
+        "headers_of_interest": {},
+        "response": {
+          "success": true,
+          "request_id": "01a1b9f8-6480-700a-9548-2e41172fd679",
+          "transcript": "எனக்கு நாளை காலை மருத்துவர் சந்திப்பு வேண்டும்",
+          "model": "prisma-v2.5",
+          "processing_time": 0.11530113220214844,
+          "end_to_end_latency": 0.12583374977111816
+        }
+      },
+      {
+        "api": "tts",
+        "lang": "en-IN",
+        "voice": "Kaveri",
+        "status": 200,
+        "latency_s": 1.602,
+        "content_type": "audio/wav",
+        "bytes": 61484,
+        "chars": 47,
+        "headers_of_interest": {},
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 1.92,
+        "header_declared_frames_bogus": true
+      },
+      {
+        "api": "stt",
+        "lang": "en-IN",
+        "status": 200,
+        "latency_s": 0.608,
+        "headers_of_interest": {},
+        "response": {
+          "success": true,
+          "request_id": "01a1b9f8-6d21-7d89-9d30-ffd6024871d6",
+          "transcript": "i need a doctor's appointment tomorrow morning",
+          "model": "prisma-v2.5",
+          "processing_time": 0.11414361000061035,
+          "end_to_end_latency": 0.13161969184875488,
+          "output": {
+            "literal": "i need a doctor's appointment tomorrow morning"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "run_at": "2026-11-08T13:52:27+0530",
+    "calls": [
+      {
+        "api": "tts",
+        "lang": "hi-IN",
+        "voice": "Nalini",
+        "status": 200,
+        "latency_s": 2.139,
+        "content_type": "audio/wav",
+        "bytes": 102444,
+        "chars": 40,
+        "headers_of_interest": {},
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 3.2,
+        "header_declared_frames_bogus": true
+      },
+      {
+        "api": "stt",
+        "lang": "hi-IN",
+        "status": 200,
+        "latency_s": 1.058,
+        "headers_of_interest": {},
+        "response": {
+          "success": true,
+          "request_id": "01a1ba40-6a71-7d8a-8f62-478405a641ab",
+          "transcript": "मैं किसान हूँ, मेरे पास 2 एकड़ ज़मीन है।",
+          "model": "prisma-v2.5",
+          "processing_time": 0.18114638328552246,
+          "end_to_end_latency": 0.30547547340393066,
+          "output": {
+            "literal": "मैं किसान हूँ, मेरे पास दो एकड़ ज़मीन है।"
+          }
+        }
+      }
+    ]
+  }
+]

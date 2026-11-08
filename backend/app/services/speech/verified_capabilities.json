@@ -1,0 +1,65 @@
+{
+  "source": "scripts/gnani_smoke_test.py runs on 2026-11-08 with the project key (see docs/smoke_test_result.json). A language is exposed in the UI only when both STT and TTS are 'verified'.",
+  "stt_endpoint": "POST https://api.vachana.ai/stt/v3 (multipart audio_file + language_code), Prisma v2.5 default model",
+  "tts_endpoint": "POST https://api.vachana.ai/api/v1/tts/inference (JSON), model timbre-v2.5, WAV 16 kHz mono 16-bit",
+  "languages": {
+    "hi-IN": {
+      "stt": "verified",
+      "tts": "verified",
+      "voices_verified": [
+        "Nalini"
+      ],
+      "voices_documented": [
+        "Nalini",
+        "Bhavna",
+        "Deepak",
+        "Vikrant"
+      ],
+      "default_voice": "Nalini"
+    },
+    "kn-IN": {
+      "stt": "verified",
+      "tts": "verified",
+      "voices_verified": [
+        "Saanvi"
+      ],
+      "voices_documented": [
+        "Saanvi",
+        "Kavin"
+      ],
+      "default_voice": "Saanvi"
+    },
+    "ta-IN": {
+      "stt": "verified",
+      "tts": "verified",
+      "voices_verified": [
+        "Asmita"
+      ],
+      "voices_documented": [
+        "Asmita",
+        "Trisha"
+      ],
+      "default_voice": "Asmita"
+    },
+    "en-IN": {
+      "stt": "verified",
+      "tts": "verified",
+      "voices_verified": [
+        "Kaveri"
+      ],
+      "voices_documented": [
+        "Kaveri",
+        "Pranav"
+      ],
+      "default_voice": "Kaveri"
+    }
+  },
+  "code_mixed": {
+    "status": "not verified",
+    "note": "Docs list no en-hi-IN-latn code. Prisma v3.0 offers format=codemix; Timbre offers language hi-en. Not yet tested with this key."
+  },
+  "streaming": {
+    "stt_websocket": "documented, not used",
+    "tts_sse": "documented, not used"
+  }
+}

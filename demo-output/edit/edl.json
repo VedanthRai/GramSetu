@@ -1,0 +1,753 @@
+{
+ "_about": "Edit decision list for scripts/edit_demo.py. Times are anchors into the recorded take: a mark name (e.g. 'otp_pause'), or 'mic_start:<utterance id>', 'mic_end:<id>', 'audio:<text in a Timbre reply>', 'audio_end:<...>', 'shot:<n>' (Mission Control screenshot-history click n), 'state:<STATE>', optionally followed by +/- seconds. Footage is never reordered except the labelled preview in the hook. Any speed != 1 is labelled on screen and its audio is dropped.",
+ "take": "takes/take2",
+ "hooks": {
+  "A": {
+   "lines": [
+    "Speak <em>Kannada</em>.",
+    "Watch the form fill itself."
+   ],
+   "sub": "Real run · AI-generated voices (Gnani Timbre) · demo portal"
+  },
+  "B": {
+   "lines": [
+    "Not everyone can fill an",
+    "<em>English</em> government form."
+   ],
+   "sub": "So this agent fills it with them, from their voice."
+  },
+  "C": {
+   "lines": [
+    "I built an AI that fills",
+    "forms from <em>your voice</em>."
+   ],
+   "sub": "Gnani Prisma hears it · Gnani Timbre answers · demo portal"
+  }
+ },
+ "segments": {
+  "hook": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "shot:4-0.2",
+   "to": "shot:4+2.3",
+   "hook": true,
+   "inset": "history",
+   "inset_before": true,
+   "audio": false,
+   "captions": false,
+   "inset_pos": {}
+  },
+  "problem": {
+   "type": "footage",
+   "scene": "problem",
+   "from": "problem_form-0.3",
+   "to": "problem_form+3.2",
+   "narration": {
+    "id": "vo_problem",
+    "at": 0.3
+   },
+   "no_caption_overlay": false,
+   "audio": false,
+   "callouts": [
+    {
+     "text": "English-only, field after field",
+     "at": 0.6,
+     "pos": {
+      "left": 1180,
+      "top": 300
+     }
+    }
+   ]
+  },
+  "speak": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_click:kn_request-0.4",
+   "to": "mic_click:kn_request+0.9",
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.5,
+    "align": "bottom"
+   }
+  },
+  "understand": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "sent:kn_request-0.1",
+   "to": "sent:kn_request+3.9",
+   "step": 1,
+   "rules_label": true,
+   "zoom": {
+    "box": "task",
+    "pad": 16,
+    "max": 1.6,
+    "in": 0.5,
+    "box_at": 1.5,
+    "align": "top"
+   },
+   "callouts": [
+    {
+     "text": "Fields taken from what was said; one thing is unclear",
+     "at": 1.2,
+     "pos": {
+      "left": 1060,
+      "top": 860
+     }
+    }
+   ]
+  },
+  "district_q": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "audio:ಜಿಲ್ಲೆಗಳಿವೆ-0.2",
+   "to": "audio_end:ಜಿಲ್ಲೆಗಳಿವೆ+0.2",
+   "step": 1,
+   "rules_label": true,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.4
+   },
+   "callouts": [
+    {
+     "text": "Asks instead of guessing: Urban or Rural?",
+     "at": 0.5,
+     "pos": {
+      "left": 1200,
+      "top": 380
+     }
+    }
+   ]
+  },
+  "district_a": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_click:kn_district-0.3",
+   "to": "mic_click:kn_district+0.6",
+   "step": 1,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.4,
+    "align": "bottom"
+   }
+  },
+  "fast_review": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "sent:kn_district+1.6",
+   "to": "consent_shown+0.3",
+   "fit": 3.0,
+   "step": 1,
+   "caption": {
+    "en": "Mobile typed (synthetic) · summary read back · user confirms by voice"
+   }
+  },
+  "approve": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "approve_start_click-1.2",
+   "to": "otp_pause+0.6",
+   "step": 3,
+   "callouts": [
+    {
+     "text": "Nothing happens until the user approves",
+     "at": 0.0,
+     "dur": 1.2,
+     "pos": {
+      "left": 80,
+      "top": 760
+     }
+    },
+    {
+     "text": "Playwright fills the demo portal (real time)",
+     "at": 1.3,
+     "pos": {
+      "left": 300,
+      "top": 760
+     },
+     "tone": "ink"
+    }
+   ]
+  },
+  "history": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "shot:4-0.15",
+   "to": "shot:8+1.0",
+   "step": 2,
+   "inset": "history",
+   "callouts": [
+    {
+     "text": "Portal rejected “2” → GramSetu re-entered “2.00”, from the portal's own error text",
+     "from": "shot:7",
+     "to": "shot:9",
+     "pos": {
+      "left": 1260,
+      "top": 640
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "otp": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "history_end-0.3",
+   "to": "otp_submit+0.7",
+   "speed": 2,
+   "step": 3,
+   "zoom": {
+    "box": "phone",
+    "pad": 340,
+    "max": 1.6,
+    "in": 0.3
+   },
+   "callouts": [
+    {
+     "text": "The user types the one-time code. GramSetu never sees, stores or speaks it.",
+     "at": 0.3,
+     "pos": {
+      "left": 80,
+      "top": 790
+     }
+    }
+   ]
+  },
+  "final": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "audio:ಎಲ್ಲವನ್ನೂ-0.3",
+   "to": "audio_end:ಎಲ್ಲವನ್ನೂ+0.2",
+   "step": 3,
+   "zoom": {
+    "box": "task",
+    "pad": 16,
+    "max": 1.5,
+    "in": 0.4,
+    "box_at": 1.0,
+    "align": "bottom",
+    "dy": 170
+   },
+   "callouts": [
+    {
+     "text": "Final submit needs a second, explicit approval",
+     "at": 0.6,
+     "pos": {
+      "left": 1180,
+      "top": 140
+     }
+    }
+   ]
+  },
+  "receipt": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "audio:ಆಯಿತು-0.4",
+   "to": "audio_end:ಆಯಿತು+0.3",
+   "step": 2,
+   "zoom": {
+    "box": "receipt",
+    "pad": 60,
+    "max": 1.9,
+    "in": 0.5
+   },
+   "callouts": [
+    {
+     "text": "Verified from the demo portal's stored record",
+     "at": 0.8,
+     "pos": {
+      "left": 560,
+      "top": 150
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "hud": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "hud_shown",
+   "to": "hud_shown+2.8",
+   "step": 2,
+   "highlights": [
+    {
+     "box": "hud",
+     "pad": 6,
+     "dim": true
+    }
+   ],
+   "callouts": [
+    {
+     "text_from": "hud",
+     "text": "",
+     "at": 0.3,
+     "pos": {
+      "left": 360,
+      "top": 160
+     },
+     "tone": "ink"
+    }
+   ]
+  },
+  "montage": {
+   "type": "footage",
+   "scene": "clinic",
+   "from": "mic_click:hi_clinic",
+   "to": "clinic_end-0.5",
+   "fit": 6.0,
+   "voice_label": true,
+   "caption": {
+    "en": "Also works for clinic booking, here in Hindi (demo clinic, synthetic data)",
+    "native": "मुझे कल सुबह डॉक्टर को दिखाना है।",
+    "lang": "hi-IN"
+   }
+  },
+  "end": {
+   "type": "card",
+   "duration": 4.6,
+   "narration": {
+    "id": "vo_end",
+    "at": 0.4
+   },
+   "card": {
+    "card": "end",
+    "line1": "Built with Gnani Prisma + Timbre",
+    "line2": "All voices AI-generated with Gnani Timbre · demo portals with synthetic data",
+    "repo": "Code: GramSetu on GitHub (link in the post)",
+    "tags": "#GnaniAI  #GreatIndianAIInternshipChallenge",
+    "question": "Which language should I add next?"
+   }
+  },
+  "end_short": {
+   "type": "card",
+   "duration": 2.5,
+   "card": {
+    "card": "end",
+    "line1": "Built with Gnani Prisma + Timbre",
+    "line2": "All voices AI-generated with Gnani Timbre",
+    "repo": "Code: GramSetu on GitHub",
+    "tags": "#GnaniAI  #GreatIndianAIInternshipChallenge",
+    "question": "Which language next?"
+   }
+  },
+  "speak_short": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_start:kn_request-0.4",
+   "to": "mic_start:kn_request+4.0",
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.4
+   }
+  },
+  "speak_fast": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_start:kn_request+4.0",
+   "to": "transcript_shown:kn_request-0.1",
+   "fit": 2.0,
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.01
+   },
+   "voice_label": true
+  },
+  "transcript_hold": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "transcript_shown:kn_request-0.1",
+   "to": "transcript_shown:kn_request+1.6",
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.01
+   },
+   "caption": {
+    "transcript": "kn_request"
+   },
+   "callouts": [
+    {
+     "text": "Live Gnani Prisma transcript",
+     "at": 0,
+     "pos": {
+      "left": 1200,
+      "top": 620
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "history_short": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "shot:4-0.15",
+   "to": "shot:9-0.15",
+   "speed": 2.5,
+   "step": 2,
+   "inset": "history",
+   "callouts": [
+    {
+     "text": "Portal rejected “2” → re-entered “2.00”",
+     "from": "shot:7",
+     "to": "shot:9",
+     "pos": {
+      "left": 1260,
+      "top": 640
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "receipt_short": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "audio:ಆಯಿತು-0.3",
+   "to": "audio:ಆಯಿತು+3.4",
+   "step": 2,
+   "zoom": {
+    "box": "receipt",
+    "pad": 60,
+    "max": 1.9,
+    "in": 0.4
+   },
+   "callouts": [
+    {
+     "text": "Verified from the stored demo record",
+     "at": 0.6,
+     "pos": {
+      "left": 560,
+      "top": 150
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "speak_voice": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_start:kn_request-0.3",
+   "to": "mic_end:kn_request+0.4",
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.01,
+    "align": "bottom"
+   }
+  },
+  "speak_prisma": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_end:kn_request+0.2",
+   "to": "transcript_shown:kn_request+1.5",
+   "step": 0,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.01,
+    "align": "bottom"
+   },
+   "callouts": [
+    {
+     "text": "Waiting for Gnani Prisma (real time)",
+     "at": 0.3,
+     "to": "transcript_shown:kn_request",
+     "pos": {
+      "left": 1200,
+      "top": 620
+     },
+     "tone": "ink"
+    },
+    {
+     "text": "Live Gnani Prisma transcript, in Kannada script",
+     "from": "transcript_shown:kn_request",
+     "pos": {
+      "left": 1200,
+      "top": 620
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "district_a_voice": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "mic_start:kn_district-0.3",
+   "to": "transcript_shown:kn_district+1.4",
+   "step": 1,
+   "zoom": {
+    "box": "voice",
+    "pad": 16,
+    "max": 1.75,
+    "in": 0.01,
+    "align": "bottom"
+   }
+  },
+  "district_update": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "sent:kn_district-0.2",
+   "to": "sent:kn_district+1.8",
+   "step": 1,
+   "zoom": {
+    "box": "task",
+    "pad": 16,
+    "max": 1.6,
+    "in": 0.4,
+    "align": "top",
+    "box_at": 1.0
+   },
+   "callouts": [
+    {
+     "text": "District filled: Bengaluru Rural",
+     "at": 0.5,
+     "pos": {
+      "left": 1060,
+      "top": 300
+     },
+     "tone": "green"
+    }
+   ]
+  },
+  "final_click": {
+   "type": "footage",
+   "scene": "scheme",
+   "from": "approve_final_click-0.7",
+   "to": "approve_final_click+0.8",
+   "step": 3,
+   "zoom": {
+    "box": "task",
+    "pad": 16,
+    "max": 1.5,
+    "in": 0.01,
+    "box_at": 0.1,
+    "align": "bottom",
+    "dy": 170
+   }
+  }
+ },
+ "outputs": {
+  "gramsetu_master_16x9": {
+   "format": "16x9",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "problem",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "district_q",
+    "district_a_voice",
+    "district_update",
+    "fast_review",
+    "approve",
+    "history",
+    "otp",
+    "final",
+    "final_click",
+    "receipt",
+    "hud",
+    "end"
+   ]
+  },
+  "gramsetu_hook_20s_16x9": {
+   "format": "16x9",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "speak_short",
+    "speak_fast",
+    "transcript_hold",
+    "history_short",
+    "receipt_short",
+    "end_short"
+   ]
+  },
+  "gramsetu_teaser_45s": {
+   "format": "16x9",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "approve",
+    "history_short",
+    "final_click",
+    "receipt_short",
+    "end_short"
+   ]
+  },
+  "gramsetu_vertical_9x16": {
+   "format": "9x16",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "speak_voice",
+    "speak_prisma",
+    "approve",
+    "history_short",
+    "final_click",
+    "receipt_short",
+    "end_short"
+   ]
+  },
+  "gramsetu_square_1x1": {
+   "format": "1x1",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "problem",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "district_q",
+    "district_a_voice",
+    "district_update",
+    "fast_review",
+    "approve",
+    "history",
+    "otp",
+    "final",
+    "final_click",
+    "receipt",
+    "hud",
+    "end"
+   ]
+  },
+  "hook_variant_A": {
+   "format": "16x9",
+   "hook": "A",
+   "segments": [
+    "hook",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "district_q",
+    "approve",
+    "history",
+    "final",
+    "final_click",
+    "receipt",
+    "end_short"
+   ]
+  },
+  "hook_variant_B": {
+   "format": "16x9",
+   "hook": "B",
+   "segments": [
+    "hook",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "district_q",
+    "approve",
+    "history",
+    "final",
+    "final_click",
+    "receipt",
+    "end_short"
+   ]
+  },
+  "hook_variant_C": {
+   "format": "16x9",
+   "hook": "C",
+   "segments": [
+    "hook",
+    "speak",
+    "speak_voice",
+    "speak_prisma",
+    "understand",
+    "district_q",
+    "approve",
+    "history",
+    "final",
+    "final_click",
+    "receipt",
+    "end_short"
+   ]
+  }
+ },
+ "extras": {
+  "gif_from": "gramsetu_master_16x9",
+  "gif_start": 0,
+  "gif_dur": 7,
+  "cards": [
+   {
+    "file": "thumbnail_1920x1080.png",
+    "format": "16x9",
+    "size": [
+     1920,
+     1080
+    ],
+    "bg": {
+     "scene": "scheme",
+     "at": "shot:7+0.5"
+    },
+    "lines": [
+     "Speak <em>Kannada</em>.",
+     "Watch the form fill itself."
+    ],
+    "sub": "Voice agent for government & clinic forms · Gnani Prisma + Timbre",
+    "tags": "#GnaniAI"
+   },
+   {
+    "file": "thumbnail_1080x1350.png",
+    "format": "9x16",
+    "size": [
+     1080,
+     1350
+    ],
+    "bg": {
+     "scene": "scheme",
+     "at": "transcript_shown:kn_request+1"
+    },
+    "lines": [
+     "Speak <em>Kannada</em>.",
+     "Watch the form",
+     "fill itself."
+    ],
+    "sub": "Gnani Prisma + Timbre · demo portal",
+    "tags": "#GnaniAI"
+   },
+   {
+    "file": "social_card_1200x627.png",
+    "format": "16x9",
+    "size": [
+     1200,
+     627
+    ],
+    "bg": {
+     "scene": "scheme",
+     "at": "audio:ಆಯಿತು+1"
+    },
+    "lines": [
+     "GramSetu"
+    ],
+    "sub": "Speak your language. The form fills itself, with your approval.",
+    "tags": "Built with Gnani Prisma + Timbre"
+   }
+  ]
+ }
+}

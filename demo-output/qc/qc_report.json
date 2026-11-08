@@ -1,0 +1,407 @@
+{
+ "integrity": {
+  "take": "takes/take2",
+  "live": true,
+  "validation_error_in_audit_log": true,
+  "recovery_in_audit_log": true,
+  "injection_probe_ignored": true,
+  "final_state": "COMPLETED",
+  "receipt": {
+   "reference": "GS-SC-57A608",
+   "description": "record found — demo application GS-SC-57A608 stored"
+  },
+  "persisted_demo_record": {
+   "demo_applications.reference": 1
+  },
+  "page_errors": []
+ },
+ "videos": [
+  {
+   "file": "gramsetu_hook_20s_16x9.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 20.0,
+   "size_mb": 3.25,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -3.5,
+   "lra": 10.1,
+   "sheets": [
+    "qc\\sheet_gramsetu_hook_20s_16x9_01.jpg",
+    "qc\\phone390_gramsetu_hook_20s_16x9_01.jpg"
+   ],
+   "clips_placed": 2,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "kn_request.wav at 2.9s (4.0s kept)",
+    "d801869e53e504ad.wav at 14.1s (3.4s kept)"
+   ],
+   "sped_pieces": [
+    "speak_fast (7.33x)",
+    "history_short (2.5x)"
+   ],
+   "render_warnings": [],
+   "issues": []
+  },
+  {
+   "file": "gramsetu_master_16x9.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 91.53,
+   "size_mb": 12.71,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -2.7,
+   "lra": 7.3,
+   "sheets": [
+    "qc\\sheet_gramsetu_master_16x9_01.jpg",
+    "qc\\sheet_gramsetu_master_16x9_02.jpg",
+    "qc\\sheet_gramsetu_master_16x9_03.jpg",
+    "qc\\sheet_gramsetu_master_16x9_04.jpg",
+    "qc\\phone390_gramsetu_master_16x9_01.jpg"
+   ],
+   "clips_placed": 10,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 28.26s (3.8s kept)",
+    "91ad3c7a4ed3b90c.wav at 46.41s (1.78s kept)",
+    "153ce55a9812e2eb.wav at 52.41s (2.55s kept)"
+   ],
+   "sped_pieces": [
+    "fast_review (14.76x)",
+    "otp (2.0x)"
+   ],
+   "render_warnings": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ],
+   "issues": []
+  },
+  {
+   "file": "gramsetu_square_1x1.mp4",
+   "width": 1080,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 91.53,
+   "size_mb": 7.03,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -2.7,
+   "lra": 7.3,
+   "sheets": [
+    "qc\\sheet_gramsetu_square_1x1_01.jpg",
+    "qc\\sheet_gramsetu_square_1x1_02.jpg",
+    "qc\\sheet_gramsetu_square_1x1_03.jpg",
+    "qc\\sheet_gramsetu_square_1x1_04.jpg",
+    "qc\\phone390_gramsetu_square_1x1_01.jpg"
+   ],
+   "clips_placed": 10,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 28.26s (3.8s kept)",
+    "91ad3c7a4ed3b90c.wav at 46.41s (1.78s kept)",
+    "153ce55a9812e2eb.wav at 52.41s (2.55s kept)"
+   ],
+   "sped_pieces": [
+    "fast_review (14.76x)",
+    "otp (2.0x)"
+   ],
+   "render_warnings": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ],
+   "issues": []
+  },
+  {
+   "file": "gramsetu_teaser_45s.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 43.22,
+   "size_mb": 6.69,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -3.0,
+   "lra": 7.0,
+   "sheets": [
+    "qc\\sheet_gramsetu_teaser_45s_01.jpg",
+    "qc\\sheet_gramsetu_teaser_45s_02.jpg",
+    "qc\\phone390_gramsetu_teaser_45s_01.jpg"
+   ],
+   "clips_placed": 4,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 24.76s (3.8s kept)",
+    "153ce55a9812e2eb.wav at 29.78s (2.55s kept)",
+    "d801869e53e504ad.wav at 37.32s (3.4s kept)"
+   ],
+   "sped_pieces": [
+    "history_short (2.5x)"
+   ],
+   "render_warnings": [],
+   "issues": []
+  },
+  {
+   "file": "gramsetu_vertical_9x16.mp4",
+   "width": 1080,
+   "height": 1920,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 37.92,
+   "size_mb": 3.5,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -3.1,
+   "lra": 7.5,
+   "sheets": [
+    "qc\\sheet_gramsetu_vertical_9x16_01.jpg",
+    "qc\\sheet_gramsetu_vertical_9x16_02.jpg",
+    "qc\\phone390_gramsetu_vertical_9x16_01.jpg"
+   ],
+   "clips_placed": 3,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "153ce55a9812e2eb.wav at 24.48s (2.55s kept)",
+    "d801869e53e504ad.wav at 32.02s (3.4s kept)"
+   ],
+   "sped_pieces": [
+    "history_short (2.5x)"
+   ],
+   "render_warnings": [],
+   "issues": []
+  },
+  {
+   "file": "hook_variant_A.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 67.13,
+   "size_mb": 9.6,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -2.8,
+   "lra": 6.2,
+   "sheets": [
+    "qc\\sheet_hook_variant_A_01.jpg",
+    "qc\\sheet_hook_variant_A_02.jpg",
+    "qc\\sheet_hook_variant_A_03.jpg",
+    "qc\\phone390_hook_variant_A_01.jpg"
+   ],
+   "clips_placed": 6,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 24.76s (3.8s kept)",
+    "153ce55a9812e2eb.wav at 35.78s (2.55s kept)"
+   ],
+   "sped_pieces": [],
+   "render_warnings": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ],
+   "issues": []
+  },
+  {
+   "file": "hook_variant_B.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 67.13,
+   "size_mb": 9.6,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -2.8,
+   "lra": 6.2,
+   "sheets": [
+    "qc\\sheet_hook_variant_B_01.jpg",
+    "qc\\sheet_hook_variant_B_02.jpg",
+    "qc\\sheet_hook_variant_B_03.jpg",
+    "qc\\phone390_hook_variant_B_01.jpg"
+   ],
+   "clips_placed": 6,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 24.76s (3.8s kept)",
+    "153ce55a9812e2eb.wav at 35.78s (2.55s kept)"
+   ],
+   "sped_pieces": [],
+   "render_warnings": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ],
+   "issues": []
+  },
+  {
+   "file": "hook_variant_C.mp4",
+   "width": 1920,
+   "height": 1080,
+   "codec": "h264",
+   "pix_fmt": "yuv420p",
+   "fps": 30.0,
+   "duration_s": 67.13,
+   "size_mb": 9.6,
+   "audio": true,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "audio_channels": 2,
+   "faststart": true,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "GramSetu demo",
+    "encoder": "Lavf63.1.102",
+    "comment": "Demo portals with synthetic data. All voices AI-generated with Gnani Timbre."
+   },
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -2.8,
+   "lra": 6.2,
+   "sheets": [
+    "qc\\sheet_hook_variant_C_01.jpg",
+    "qc\\sheet_hook_variant_C_02.jpg",
+    "qc\\sheet_hook_variant_C_03.jpg",
+    "qc\\phone390_hook_variant_C_01.jpg"
+   ],
+   "clips_placed": 6,
+   "clips_trimmed_by_cut": [],
+   "clips_ending_early": [
+    "326f50c46827b384.wav at 24.76s (3.8s kept)",
+    "153ce55a9812e2eb.wav at 35.78s (2.55s kept)"
+   ],
+   "sped_pieces": [],
+   "render_warnings": [
+    "INFO history: dropped clip already playing before the cut (ಪೋರ್ಟಲ್‌ಗೆ ಒಂದು ಬಾರಿಯ ಕೋಡ್ ಬೇಕ…)"
+   ],
+   "issues": []
+  }
+ ],
+ "secret_scan": {
+  "files_scanned": 56,
+  "keys_checked": 1,
+  "hits": []
+ },
+ "final_files_mb": {
+  "gramsetu_hook_20s_16x9.captions_en.srt": 0.0,
+  "gramsetu_hook_20s_16x9.captions_kn.srt": 0.0,
+  "gramsetu_hook_20s_16x9.mp4": 3.25,
+  "gramsetu_master_16x9.captions_en.srt": 0.0,
+  "gramsetu_master_16x9.captions_kn.srt": 0.0,
+  "gramsetu_master_16x9.mp4": 12.71,
+  "gramsetu_square_1x1.captions_en.srt": 0.0,
+  "gramsetu_square_1x1.captions_kn.srt": 0.0,
+  "gramsetu_square_1x1.mp4": 7.03,
+  "gramsetu_teaser_45s.captions_en.srt": 0.0,
+  "gramsetu_teaser_45s.captions_kn.srt": 0.0,
+  "gramsetu_teaser_45s.mp4": 6.69,
+  "gramsetu_vertical_9x16.captions_en.srt": 0.0,
+  "gramsetu_vertical_9x16.captions_kn.srt": 0.0,
+  "gramsetu_vertical_9x16.mp4": 3.5,
+  "hook_variant_A.captions_en.srt": 0.0,
+  "hook_variant_A.captions_kn.srt": 0.0,
+  "hook_variant_A.mp4": 9.6,
+  "hook_variant_B.captions_en.srt": 0.0,
+  "hook_variant_B.captions_kn.srt": 0.0,
+  "hook_variant_B.mp4": 9.6,
+  "hook_variant_C.captions_en.srt": 0.0,
+  "hook_variant_C.captions_kn.srt": 0.0,
+  "hook_variant_C.mp4": 9.6,
+  "readme_loop.gif": 1.16,
+  "social_card_1200x627.png": 0.42,
+  "thumbnail_1080x1350.png": 0.34,
+  "thumbnail_1920x1080.png": 0.93
+ }
+}
