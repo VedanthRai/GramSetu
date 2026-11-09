@@ -21,8 +21,7 @@ class Settings(BaseSettings):
     gnani_fixture_mode: bool = False
     daily_gnani_request_limit: int = 150
 
-    reasoning_provider: str = "rules"  # anthropic | openai_compatible | rules
-    anthropic_api_key: str = ""
+    reasoning_provider: str = "rules"  # rules | openai_compatible
     reasoning_model: str = ""
     reasoning_base_url: str = ""
     reasoning_api_key: str = ""
@@ -36,9 +35,7 @@ class Settings(BaseSettings):
 
     @property
     def effective_reasoning_model(self) -> str:
-        if self.reasoning_model:
-            return self.reasoning_model
-        return "claude-opus-5-5" if self.reasoning_provider == "anthropic" else ""
+        return self.reasoning_model
 
 
 @lru_cache

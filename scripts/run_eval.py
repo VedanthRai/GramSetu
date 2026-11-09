@@ -303,7 +303,7 @@ def main() -> None:
         result["pending"].append("end-to-end completion time (run with --e2e URL)")
     result["pending"] += ["human-recorded audio (none supplied)", "Tamil and English audio items in the STT eval (verified by smoke test only)"]
     if get_settings().reasoning_provider == "rules":
-        result["pending"].append("AI reasoning provider (no ANTHROPIC_API_KEY configured; results are for the rules fallback)")
+        result["pending"].append("AI reasoning provider (no AI provider configured; results are for the rules fallback)")
     (ROOT / "docs" / "eval_results.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     for m in metrics:
         d = f" ({m['numerator']}/{m['denominator']})" if m.get("numerator") is not None else ""

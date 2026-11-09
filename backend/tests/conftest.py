@@ -11,7 +11,7 @@ from pathlib import Path
 TMP = Path(tempfile.mkdtemp(prefix="gramsetu-test-"))
 PORT = 8765
 os.environ.update({
-    "GNANI_API_KEY": "", "REASONING_PROVIDER": "rules", "ANTHROPIC_API_KEY": "",
+    "GNANI_API_KEY": "", "REASONING_PROVIDER": "rules",
     "DB_PATH": str(TMP / "test.db"), "APP_ORIGIN": f"http://127.0.0.1:{PORT}", "BROWSER_HEADLESS": "true",
     "GNANI_FIXTURE_MODE": "false", "RETAIN_TRANSCRIPTS": "false", "DAILY_GNANI_REQUEST_LIMIT": "150",
 })

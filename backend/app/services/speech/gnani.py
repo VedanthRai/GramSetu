@@ -31,8 +31,10 @@ MAX_RETRIES = 1  # credit protection: never more than one retry
 def _err_message(r: httpx.Response) -> tuple[str, str]:
     try:
         body = r.json()
-    except ValueError:
-        return "HTTP_%d" % r.status_code, r.text[:200]
+    except ValueError:  # gateway error pages (HTML) are not messages for the user
+        return "HTTP_%d" % r.status_code, ""
+    if not isinstance(body, dict):
+        return "HTTP_%d" % r.status_code, ""
     if isinstance(body.get("detail"), dict):
         d = body["detail"]
         return d.get("error_code", f"HTTP_{r.status_code}"), d.get("message", "")
@@ -97,7 +99,8 @@ class GnaniPrismaSTT:
             code, msg = _err_message(r)
             self.health.fail(f"{r.status_code} {code}", reachable=True)
             log.warning("Prisma error %s %s", r.status_code, code)
-            raise SpeechError(code, sanitize(msg) or "Prisma could not transcribe this audio.", 502 if r.status_code >= 500 else 400)
+            raise SpeechError(code, sanitize(msg) or ("The voice service is busy right now. Please try again in a moment." if r.status_code >= 500 else "Prisma could not transcribe this audio."),
+                              502 if r.status_code >= 500 else 400)
         body = r.json()
         self.health.ok(latency)
         with db() as c:
@@ -162,7 +165,7 @@ class GnaniTimbreTTS:
         if r.status_code != 200 or r.content[:4] != b"RIFF":
             code, msg = _err_message(r)
             self.health.fail(f"{r.status_code} {code}", reachable=True)
-            raise SpeechError(code, sanitize(msg) or "Timbre could not synthesise speech.")
+            raise SpeechError(code, sanitize(msg) or ("The voice service is busy right now. Please try again in a moment." if r.status_code >= 500 else "Timbre could not synthesise speech."))
         wav = normalise_wav(r.content)  # Timbre writes placeholder sizes in the WAV header
         path.write_bytes(wav)
         with db() as c:

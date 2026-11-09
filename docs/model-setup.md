@@ -66,14 +66,11 @@ GramSetu therefore keeps a **local request count** (`/status` page, labelled "no
 
 `REASONING_PROVIDER` selects one of:
 
-1. **`anthropic`** (recommended): Claude via the official `anthropic` Python SDK. Default model `claude-opus-5-5`
-   (override with `REASONING_MODEL`), `output_config.effort=low` for latency, and `output_config.format` = the JSON Schema
-   of `ReasoningOutput`. Output is validated with Pydantic; on failure it retries once with the validation error, then the
-   user is asked to rephrase. **Status: implemented, not verified — no `ANTHROPIC_API_KEY` was available during the build.**
-2. **`openai_compatible`**: any OpenAI-compatible `/chat/completions` endpoint (`REASONING_BASE_URL`, `REASONING_API_KEY`,
-   `REASONING_MODEL`), JSON mode, same validation. Not verified.
-3. **`rules`**: deterministic keyword + slot-filling engine for hi/kn/ta/en. Always labelled
+1. **`rules`** (default): deterministic keyword + slot-filling engine for hi/kn/ta/en, always labelled
    **"Rules fallback (no AI model)"**. This is what the current build runs and what the evaluation numbers measure.
+2. **`openai_compatible`**: any OpenAI-compatible `/chat/completions` endpoint (`REASONING_BASE_URL`, `REASONING_API_KEY`,
+   `REASONING_MODEL`), JSON mode. Output is validated with Pydantic; on failure it retries once with the validation error,
+   then the user is asked to rephrase. Not verified yet.
 
 Prompt: `backend/app/services/reasoning/prompts/interpret_v1.md` (version-controlled). User text is wrapped in
 `<user_text>` and declared to be data. Before any model call, digit runs (phones, IDs, codes) are redacted, OTP/scam text

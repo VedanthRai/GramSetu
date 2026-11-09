@@ -72,33 +72,6 @@ class _LLMBase:
         raise ReasoningFailure("Model output failed schema validation twice")
 
 
-class AnthropicReasoner(_LLMBase):
-    label = "Claude (Anthropic API)"
-
-    def __init__(self) -> None:
-        s = get_settings()
-        super().__init__("anthropic", s.effective_reasoning_model, bool(s.anthropic_api_key))
-        self._client = None
-        if s.anthropic_api_key:
-            import anthropic
-            self._client = anthropic.AsyncAnthropic(api_key=s.anthropic_api_key, max_retries=1, timeout=30.0)
-
-    async def _call(self, user_msg: str, feedback: str | None) -> str:
-        messages = [{"role": "user", "content": user_msg}]
-        if feedback:
-            messages[0]["content"] += f"\n<previous_output_validation_error>{feedback}</previous_output_validation_error>"
-        resp = await self._client.messages.create(
-            model=self.model,
-            max_tokens=2000,
-            system=SYSTEM_PROMPT,
-            messages=messages,
-            output_config={"effort": "low", "format": {"type": "json_schema", "schema": _schema()}},
-        )
-        if resp.stop_reason == "refusal":
-            raise ReasoningFailure("Model declined the request")
-        return next((b.text for b in resp.content if b.type == "text"), "")
-
-
 class OpenAICompatibleReasoner(_LLMBase):
     label = "OpenAI-compatible endpoint"
 

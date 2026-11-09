@@ -674,6 +674,6 @@
     "end-to-end completion time (run with --e2e URL)",
     "human-recorded audio (none supplied)",
     "Tamil and English audio items in the STT eval (verified by smoke test only)",
-    "AI reasoning provider (no ANTHROPIC_API_KEY configured; results are for the rules fallback)"
+    "AI reasoning provider (no AI provider configured; results are for the rules fallback)"
   ]
 }

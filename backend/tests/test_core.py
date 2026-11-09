@@ -267,3 +267,14 @@ def test_rules_inline_name_without_punctuation():
     f = {x.field_name: x.normalized_value for x in R.interpret_sync(
         "मैं किसान हूँ मेरा नाम रमेश कुमार है मैं बेंगलुरु से हूँ गाँव हरोहल्ली", ctx("hi-IN")).fields}
     assert f["full_name"] == "रमेश कुमार"
+
+
+def test_gateway_error_page_is_not_shown_to_the_user():
+    import httpx
+    from app.services.speech.gnani import _err_message
+
+    html = httpx.Response(504, text="<!DOCTYPE html><html><body>Gateway Timeout</body></html>")
+    assert _err_message(html) == ("HTTP_504", "")
+    assert _err_message(httpx.Response(502, json=["unexpected"])) == ("HTTP_502", "")
+    api = httpx.Response(400, json={"detail": {"error_code": "BAD_AUDIO", "message": "Audio too short"}})
+    assert _err_message(api) == ("BAD_AUDIO", "Audio too short")

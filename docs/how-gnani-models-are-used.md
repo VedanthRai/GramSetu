@@ -28,12 +28,6 @@ real Timbre synthesis and a non-empty Prisma transcript for that language.
 | Tamil `ta-IN` | verified | verified | Asmita | app |
 | English `en-IN` | verified | verified | Kaveri (app), **Pranav** (video narration) | app; video narration |
 
-Voice audition for the demo video (`scripts/demo/clips.py --audition`, results in `demo_assets/voices.json`): each
-user line was synthesised with 2 Kannada voices (Kavin, Saanvi) or 3 Hindi voices (Deepak, Vikrant, Bhavna), and each
-clip was transcribed by live Prisma. Every candidate was accepted on the first attempt (character error rate 0 to 0.026
-against the written sentence; the one difference was ಖಾತೆನೂ → ಖಾತೆಯೂ, a spoken variant). Kavin was chosen for the user so
-that the user and GramSetu (Saanvi) sound clearly different. Narration: Pranav and Kaveri both transcribed exactly;
-Pranav was chosen as a third distinct voice.
 
 ## Measured latency (real calls)
 

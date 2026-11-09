@@ -7,7 +7,7 @@ Browser (React + TS)                         FastAPI backend (Python 3.11+)     
 │  mic → AudioWorklet →    │  /speech/*    │ speech/gnani.py ─ Prisma STT ───────────────────▶ api.vachana.ai/stt/v3
 │  16 kHz WAV (wav.ts)     │               │                 ─ Timbre TTS + cache ───────────▶ api.vachana.ai/api/v1/tts/inference
 │ TaskPanel (review/approve)│  /sessions/* │ orchestrator.py                              │
-│ MissionControl (shots,   │◀──── WS ──────│  guards → reasoning → validate → state machine│──▶ Claude (optional) / rules
+│ MissionControl (shots,   │◀──── WS ──────│  guards → reasoning → validate → state machine│──▶ LLM (optional) / rules
 │  timeline, OTP box)      │  events       │ portals/ (adapter registry)                  │
 │ LatencyHud, ProviderStrip│               │ browser/executor.py (Playwright, 1 ctx/task) │
 └──────────────────────────┘               │  policy.py → act → observe → verify          │
@@ -55,7 +55,7 @@ Browser (React + TS)                         FastAPI backend (Python 3.11+)     
 | `backend/app/services/browser/` | `policy.py`, `executor.py` (Playwright), `verifier.py` |
 | `backend/app/demo_portals/` | locally hosted multi-page HTML portals with real validation, demo OTP, review pages, hidden injection probe |
 | `backend/app/services/speech/` | Gnani providers, WAV handling, verified capability table, mock providers (tests only) |
-| `backend/app/services/reasoning/` | Anthropic / OpenAI-compatible / rules providers, versioned prompt |
+| `backend/app/services/reasoning/` | Rules and OpenAI-compatible providers, versioned prompt |
 | `backend/app/services/usage/guard.py` | local request counter + daily ceiling |
 | `frontend/src/` | pages, components, typed API client, audio capture/playback |
 

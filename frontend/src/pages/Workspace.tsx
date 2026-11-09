@@ -93,7 +93,7 @@ export default function Workspace({ scenario }: { scenario?: Scenario }) {
       <div className="mb-3"><ProviderStrip providers={providers} usage={usage} /></div>
       {providers && !providers.reasoning.is_ai && (
         <p className="mb-3 rounded-md border border-line bg-white px-3 py-2 text-sm">
-          <b>Rules fallback (no AI model)</b> is interpreting requests — a limited keyword engine. Set <code>REASONING_PROVIDER=anthropic</code> and <code>ANTHROPIC_API_KEY</code> to use Claude.
+          <b>Rules fallback (no AI model)</b> is interpreting requests — a limited keyword engine.
         </p>
       )}
       {s.error && <div role="alert" className="mb-3 rounded-md bg-danger-light px-3 py-2 text-sm text-danger">{s.error}</div>}

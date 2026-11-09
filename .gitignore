@@ -4,26 +4,9 @@ __pycache__/
 *.pyc
 node_modules/
 frontend/dist/
-frontend/*.tsbuildinfo
 data/*.db
 data/tts_cache/
 data/screenshots/
 data/eval_cache/
 .pytest_cache/
-.deepeval/
-
-# demo video pipeline: raw takes (frames, large), render intermediates and caches stay local
-demo-output/takes/
-demo-output/edit/work/
-demo-output/edit/cache/
-demo-output/qc/sheet_*.jpg
-demo-output/final/*.mp4
-!demo-output/final/gramsetu_master_16x9.mp4
-demo_assets/generated/auditions/
-
-# release bundle
-GramSetu_*.zip
-
-# OS artifacts
-.DS_Store
-Thumbs.db
+.ruff_cache/

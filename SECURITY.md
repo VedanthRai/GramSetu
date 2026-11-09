@@ -5,12 +5,12 @@ anything to real government or hospital systems.
 
 ## Reporting a vulnerability
 
-Please open a private security advisory on this repository (GitHub → Security → Report a vulnerability), or contact the
-maintainer at `vedanthrai01@gmail.com`. Please do not open a public issue for security problems.
+Please open a private security advisory on this repository (GitHub → Security → Report a vulnerability). Please do not open a public issue for security problems.
 
 ## Secrets
 
-* API keys live only in `.env` (`GNANI_API_KEY`). `.env` is git-ignored and has never been committed (checked with `python scripts/secret_scan.py`, which scans the working tree and the full git history).
+* API keys live only in `.env` (`GNANI_API_KEY`, optional `REASONING_API_KEY`). `.env` is git-ignored and has never
+  been committed.
 * Keys are read by the backend only; the browser never receives them. Logs pass through a sanitiser that redacts keys,
   OTPs, phone and Aadhaar-like numbers (`backend/app/core/logging.py`).
 * If you fork this repo, never commit `.env`. If a key is ever exposed, rotate it in the Gnani dashboard immediately.
