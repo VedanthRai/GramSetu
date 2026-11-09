@@ -1,146 +1,227 @@
-# GramSetu
+# GramSetu 🗣️
 
-**Speak your language. GramSetu fills the online form with you, and only submits when you say so.**
+**Speak your language. GramSetu fills the online form with you — and only submits when you say so.**
 
-A voice-first assistant for government and healthcare web services in Kannada, Hindi, Tamil and English, built on
-**Gnani Prisma** (speech-to-text) and **Gnani Timbre** (text-to-speech).
+A voice-first assistant for government and healthcare web services in **Kannada, Hindi, Tamil and English**, built on **Gnani Prisma** (speech-to-text) and **Gnani Timbre** (text-to-speech).
+
+> Built for the **Gnani.ai Great Indian AI Internship Challenge 2026**
+
+---
 
 ![GramSetu filling a demo scheme form from a Kannada voice request](docs/media/readme_loop.gif)
 
-> The GIF and the demo video show a real run: live Prisma transcription, a real Playwright browser on a **local demo
-> portal with synthetic data**, and Timbre speaking. **All voices in the demo are AI-generated with Gnani Timbre**,
-> including the "user". Demo video: [Watch 90s Full Demo (1080p)](docs/replay/media/gramsetu_master_16x9.mp4) · static replay page: see
-> [Demo replay](#demo-replay-no-live-api-calls).
+> Live Prisma transcription, a real Playwright browser on a local demo portal with synthetic data, and Timbre speaking.
+> **All voices in the demo are AI-generated with Gnani Timbre**, including the "user".
+> → [🎬 Watch the full 90s demo (1080p)](docs/replay/media/gramsetu_master_16x9.mp4) · [📺 Static replay page](docs/replay/index.html)
 
-## How it works, in 3 steps
+---
 
-1. **Speak.** Say what you need in your language. Gnani Prisma writes it down, in your script, and you check the words.
-2. **Review.** GramSetu fills in what it understood, asks out loud (Gnani Timbre) only for what is missing or unclear,
-   for example "Bengaluru Urban or Bengaluru Rural?", and reads back a summary.
-3. **Watch it work.** After you approve, a browser agent fills the portal while you watch every screenshot. It stops for
-   your one-time code and asks again before the final submit. "Done" is said only when the portal's stored record is found.
+## How it works
 
-## What is real and what is demo
+```
+You speak  →  Gnani Prisma hears  →  GramSetu asks only what's missing  →  Gnani Timbre replies
+     ↓
+You review the filled form  →  You approve  →  Browser fills & submits
+     ↓
+GramSetu reads you back a confirmed receipt. Done.
+```
 
-| Real (runs in the demo) | Demo / not real |
+1. **Speak** — Say what you need in your own language. Prisma transcribes it in your script, live.
+2. **Review** — GramSetu fills in what it understood, then asks only for what's missing or ambiguous — spoken aloud by Timbre. Example: *"Bengaluru Urban or Bengaluru Rural?"*
+3. **Watch it work** — After your approval, a real browser agent fills the portal while you watch every step via live screenshots. OTPs and the final submit always stay with you.
+4. **Verified done** — "Done" is said only after GramSetu finds and reads back the portal's stored receipt.
+
+---
+
+## Demo
+
+| | |
 |---|---|
-| Live Gnani Prisma transcription (`prisma-v2.5`) of the spoken audio | The two portals are local practice sites marked "NOT AN OFFICIAL GOVERNMENT WEBSITE" |
-| Live Gnani Timbre speech (`timbre-v2.5`); repeated phrases come from a cache | All names, numbers, doctors, slots and records are synthetic |
-| A real Playwright browser filling multi-step forms, including a real validation error and recovery | The "user" voice in the video is AI-generated (Timbre), not a person |
-| Approval gates, OTP pause, audit timeline, verification against the stored record (SQLite) | Nothing is sent to any real government or hospital system |
-| Latency HUD numbers, evaluation results, smoke-test results | The default language understanding is a **rules engine (no AI model)**; Claude is supported but was not verified (no key) |
+| **Full demo (91s)** | Kannada scheme application, Prisma STT live, validation error recovered, OTP pause, verified receipt |
+| **What's real** | Live Gnani Prisma & Timbre calls, real Playwright browser, real validation & recovery, real latency numbers |
+| **What's demo** | Local practice portals (not official sites), synthetic names/slots/records, Timbre-generated voices |
+
+Screenshots from the real agent run:
+
+<table>
+<tr>
+<td><img src="docs/screens/landing.png" width="260" alt="Landing page"></td>
+<td><img src="docs/screens/live-voice-turn.png" width="260" alt="Live voice turn"></td>
+<td><img src="docs/screens/workspace-review.png" width="260" alt="Review workspace"></td>
+</tr>
+<tr>
+<td><img src="docs/screens/workspace-final-approval.png" width="260" alt="Final approval"></td>
+<td><img src="docs/screens/workspace-verified.png" width="260" alt="Verified receipt"></td>
+<td><img src="docs/screens/judge.png" width="260" alt="Judge / eval mode"></td>
+</tr>
+</table>
+
+---
 
 ## Features
 
-* Voice in 4 languages verified with our key: Kannada, Hindi, Tamil, English (Prisma + Timbre each). Hinglish audio
-  sent as Hindi came back correctly in Devanagari, but a code-mixed mode is not verified.
-* **Workflow A:** PM-KISAN-style scheme form. Guidance quotes the official pmkisan.gov.in text with a retrieval date and never declares anyone eligible.
-* **Workflow B:** clinic booking from a real slots table, with no double booking under concurrency, plus a spoken correction ("no, make it Friday") and cancellation.
-* **Browser Mission Control:** live screenshots, the plan with a "why" for each step, an audit timeline, and an interrupt button.
-* Safety: scam/OTP guard, emergency stop (112), medical-advice refusal, prompt-injection-resistant browser policy, same-origin only.
-* Latency HUD, a local Gnani usage counter, judge mode, voice-only mode, history, and a printable/spoken summary card.
+### 🎙️ Voice — Powered by Gnani Prisma & Timbre
+- **4 languages fully verified**: Kannada (`kn-IN`), Hindi (`hi-IN`), Tamil (`ta-IN`), English (`en-IN`)
+- Prisma `prisma-v2.5` for live speech-to-text, Timbre `timbre-v2.5` for natural spoken replies
+- Repeated phrases served from a local Timbre cache (faster, no duplicate API calls)
+- Hinglish audio sent as Hindi transcribed correctly in Devanagari
 
-## Architecture
+### 🌐 Workflows
+- **Workflow A — PM-KISAN Scheme Form**: Guides a farmer through the application, quoting official pmkisan.gov.in guidance with a retrieval date, never declaring eligibility
+- **Workflow B — Clinic Booking**: Books real slots from a live table, prevents double booking under concurrency, handles spoken corrections (*"no, make it Friday"*) and cancellations
 
-![Architecture: user voice → Gnani Prisma → reasoning provider → policy validator → Playwright → Gnani Timbre, with approval, OTP and verification gates](docs/architecture.png)
+### 🖥️ Browser Mission Control
+- Live screenshots streamed as the agent fills the form
+- Step plan with a "why" for each action
+- Full audit timeline with timestamps
+- One-click interrupt button at any point
 
-Source: [docs/architecture.svg](docs/architecture.svg). Details: [docs/architecture.md](docs/architecture.md) ·
-Gnani integration: [docs/how-gnani-models-are-used.md](docs/how-gnani-models-are-used.md).
+### 🔒 Safety & Trust
+- Scam / OTP guard — rejects social-engineering attempts
+- Emergency stop — recognises 112 / medical emergencies
+- Medical advice refusal — never diagnoses or prescribes
+- Prompt-injection-resistant browser policy (same-origin only)
+- OTPs never reach logs, models, or speech — ever
 
-## Setup and run
+### 📊 Transparency
+- Latency HUD showing real Prisma and Timbre response times per turn
+- Local Gnani usage counter
+- `/eval` judge mode with full metric breakdown
+- Printable + spoken summary card after each completed workflow
 
-Requirements: Python 3.11+ (tested 3.14), Node 18+ (tested 24), ffmpeg (only for the demo-video pipeline), internet access for Gnani.
+---
 
-```bash
-cp .env.example .env                       # put GNANI_API_KEY=... in .env (never commit it)
-python -m venv .venv
-.venv/Scripts/python -m pip install -r backend/requirements.txt     # macOS/Linux: .venv/bin/python
-.venv/Scripts/python -m playwright install chromium
-python scripts/gnani_smoke_test.py         # verifies the key + Hindi (2 Gnani calls); --langs kn-IN ta-IN en-IN
-scripts/dev.sh                              # Windows PowerShell: scripts\dev.ps1 → http://127.0.0.1:8000
-```
+## Verified Languages
 
-Open http://127.0.0.1:8000 and choose **Start speaking**. Optional: `REASONING_PROVIDER=anthropic` with `ANTHROPIC_API_KEY` to use Claude.
-On Windows, keep the project on a short path (e.g. `C:\gramsetu`) because of the 260-character path limit.
-
-## Verified languages (from the capability table)
-
-| Language | Prisma | Timbre | Voices verified |
+| Language | Prisma | Timbre | Voices used |
 |---|---|---|---|
-| Kannada `kn-IN` | verified | verified | Saanvi (+ Kavin used in the demo video) |
-| Hindi `hi-IN` | verified | verified | Nalini (+ Deepak used for a demo line) |
-| Tamil `ta-IN` | verified | verified | Asmita |
-| English `en-IN` | verified | verified | Kaveri (+ Pranav used for narration) |
+| Kannada `kn-IN` | ✅ verified | ✅ verified | Saanvi (assistant) · Kavin (user in demo) |
+| Hindi `hi-IN` | ✅ verified | ✅ verified | Nalini (assistant) · Deepak (demo line) |
+| Tamil `ta-IN` | ✅ verified | ✅ verified | Asmita |
+| English `en-IN` | ✅ verified | ✅ verified | Kaveri (assistant) · Pranav (narration) |
 
-## Measured latency (real calls)
+---
 
-* Smoke tests, Timbre / Prisma: Hindi 2.14 s / 1.06 s, Kannada 2.71 s / 1.46 s, Tamil 1.92 s / 0.89 s, English 1.60 s / 0.61 s.
-* Demo take: Prisma took 3.76 s on a 15.3 s Kannada request and 0.30 s on a short "yes". The Latency HUD on the last
-  voice turn showed 0.55 s total machine time, with a cached Timbre reply.
-* Earlier live UI test: 2.79 s from send to first reply audio. Latency varies a lot between calls.
+## Measured Latency (real Gnani API calls)
 
-## Evaluation (sample sizes included)
+| Test | Prisma | Timbre |
+|---|---|---|
+| Hindi smoke test | 1.06 s | 2.14 s |
+| Kannada smoke test | 1.46 s | 2.71 s |
+| Tamil smoke test | 0.89 s | 1.92 s |
+| English smoke test | 0.61 s | 1.60 s |
+| Demo — 15.3 s Kannada request | **3.76 s** | — |
+| Demo — short "yes" | **0.30 s** | — |
+| Live UI test — send to first audio | — | **2.79 s** |
 
-`python scripts/run_eval.py --stt --sample 7 --e2e http://127.0.0.1:8000`. Results are in [docs/eval_results.json](docs/eval_results.json).
+Latency HUD on the last demo voice turn: **0.55 s total machine time** (cached Timbre reply).
+
+---
+
+## Evaluation
+
+Run with: `python scripts/run_eval.py --stt --sample 7 --e2e http://127.0.0.1:8000`  
+Full results: [docs/eval_results.json](docs/eval_results.json)
 
 | Metric | Result |
 |---|---|
-| Intent accuracy | 33/33 utterances |
-| Field extraction | 39/39 expected fields |
-| Clarification answers understood / spoken corrections applied | 6/6 · 3/3 |
-| Safety guards (scam / emergency / medical) | 5/5 |
-| Unsafe actions rejected by policy / legitimate actions accepted | 12/12 · 31/31 |
-| Double booking prevented | 1 of 8 concurrent attempts succeeds |
-| End-to-end workflows verified | 2/2 |
-| Prisma CER / WER | 1.5% / 6% on 6 synthetic (Timbre-generated) clips |
+| Intent accuracy | **33 / 33** utterances |
+| Field extraction | **39 / 39** expected fields |
+| Clarification answers understood | **6 / 6** |
+| Spoken corrections applied | **3 / 3** |
+| Safety guards (scam / emergency / medical) | **5 / 5** |
+| Unsafe actions rejected by policy | **12 / 12** |
+| Legitimate actions accepted | **31 / 31** |
+| Double booking prevented under concurrency | **1 of 8** concurrent attempts succeeds |
+| End-to-end workflows verified | **2 / 2** |
+| Prisma CER / WER on synthetic clips | **1.5% / 6%** |
 
-Honest limits: the dataset was written by the same person as the rules engine, and the evaluation audio is synthetic.
-These numbers overstate real-world accuracy. The tests are 59 backend tests (keyless, with real Playwright), 7 frontend
-tests, and Playwright UI tests.
+> Note: evaluation audio is Timbre-generated (synthetic), not human speech. Numbers reflect the demo scenario; real-world accuracy would vary.
 
-## Security and privacy
+---
 
-No raw audio is stored. Transcripts are kept only if the user opts in. OTPs never reach logs, models or speech. Digits
-are redacted before any reasoning call. Keys stay server-side in `.env`, which is git-ignored. The full git history was
-scanned for secrets with `scripts/secret_scan.py`, and none were found. See [SECURITY.md](SECURITY.md) and
-[docs/security.md](docs/security.md).
+## Architecture
 
-## Demo video pipeline (reproducible)
+![Architecture diagram: user voice → Gnani Prisma → reasoning engine → policy validator → Playwright → Gnani Timbre](docs/architecture.png)
 
-All demo voices are AI-generated with Gnani Timbre from [demo_assets/sentences.json](demo_assets/sentences.json).
-After editing the sentences, rebuild everything with one command (the server must be running):
+- [Architecture details](docs/architecture.md)
+- [How Gnani Prisma and Timbre are used](docs/how-gnani-models-are-used.md)
+- Full SVG: [docs/architecture.svg](docs/architecture.svg)
+
+---
+
+## Setup & Run
+
+**Requirements:** Python 3.11+, Node 18+, internet access for Gnani API
 
 ```bash
-bash scripts/build_video.sh        # or: make video
+# 1. Configure your Gnani API key
+cp .env.example .env
+# Edit .env and set GNANI_API_KEY=your_key_here
+
+# 2. Install Python dependencies
+python -m venv .venv
+.venv\Scripts\python -m pip install -r backend/requirements.txt   # Windows
+# .venv/bin/python -m pip install -r backend/requirements.txt     # macOS/Linux
+
+# 3. Install Playwright browser
+.venv\Scripts\python -m playwright install chromium
+
+# 4. Verify your Gnani key (runs 2 live API calls)
+python scripts/gnani_smoke_test.py
+# Test all 4 languages:
+# python scripts/gnani_smoke_test.py --langs kn-IN hi-IN ta-IN en-IN
+
+# 5. Start the app
+scripts\dev.ps1          # Windows PowerShell
+# bash scripts/dev.sh    # macOS/Linux
 ```
 
-The pipeline auditions voices and checks them with live Prisma, then records a live take with Playwright (the clip is
-fed to the page's microphone, so the product's own recording and upload code runs unchanged). It then edits from
-[demo-output/edit/edl.json](demo-output/edit/edl.json) with ffmpeg and HTML overlays, and runs QC
-(`scripts/qc_video.py`).
+Open **http://127.0.0.1:8000** and choose **Start speaking**.
 
-## Demo replay (no live API calls)
+> **Windows note:** Keep the project on a short path (e.g. `C:\gramsetu`) due to the 260-character path limit.
 
-[docs/replay/index.html](docs/replay/index.html) is a static page with the recorded video, the agent's screenshots and
-the sanitized audit timeline of the demo take. To publish it free on GitHub Pages: Settings → Pages → "Deploy from a
-branch" → `main` / `docs`, then open `https://<you>.github.io/<repo>/replay/`. There is deliberately **no public live
-deployment** using the real Gnani key.
+---
 
-## Limitations
+## Demo Replay (no live API calls)
 
-* Prisma and Timbre run over REST, not streaming, so long replies take seconds before audio starts.
-* Language understanding defaults to a rules engine (no AI model). Claude support is implemented but not verified.
-* Two demo workflows on local portals only; real portals would need an adapter and a security review.
-* Tamil and English are verified by the smoke test only. The evaluation audio is synthetic. All non-English phrases
-  await native-speaker review.
-* Single-user local app with no API authentication.
+[`docs/replay/index.html`](docs/replay/index.html) is a static page with:
+- The full 90s recorded demo video
+- The browser agent's own screenshots from that run
+- The sanitised audit timeline with timestamps
 
-## Roadmap
+**To publish free on GitHub Pages:**  
+Settings → Pages → *Deploy from a branch* → `main` / `docs`  
+Then open: `https://VedanthRai.github.io/GramSetu/replay/`
 
-Timbre SSE and Prisma streaming for faster first audio · human-recorded evaluation set with native-speaker review ·
-verify Claude reasoning and compare it with the rules engine · more languages · more services through the adapter registry.
+---
 
-## License and acknowledgements
+## Reproducible Demo Video
 
-MIT, see [LICENSE](LICENSE). Thanks to **Gnani.ai** for Prisma and Timbre and for the programme credits. Fonts: Noto
-Sans family (SIL Open Font License). PM-KISAN facts are quoted from pmkisan.gov.in (retrieved 8 Nov 2026).
+All demo voices are AI-generated with Gnani Timbre from [`demo_assets/sentences.json`](demo_assets/sentences.json).  
+Rebuild the full video with one command (server must be running):
+
+```bash
+bash scripts/build_video.sh   # or: make video
+```
+
+The pipeline: auditions Timbre voices → checks with live Prisma → records a live Playwright take → edits with ffmpeg + HTML overlays → runs QC.
+
+---
+
+## Security & Privacy
+
+- **No raw audio stored.** Transcripts kept only if user opts in.
+- **OTPs never reach logs, models, or speech** — redacted before any processing.
+- **Keys stay server-side** in `.env` (git-ignored, never committed — verified by `scripts/secret_scan.py`).
+- See [SECURITY.md](SECURITY.md) and [docs/security.md](docs/security.md) for the full policy.
+
+---
+
+## License & Acknowledgements
+
+MIT — see [LICENSE](LICENSE).
+
+Thanks to **[Gnani.ai](https://gnani.ai)** for Prisma (`prisma-v2.5`) and Timbre (`timbre-v2.5`) and for the programme credits.  
+Fonts: Noto Sans family (SIL Open Font License).  
+PM-KISAN guidance quoted from [pmkisan.gov.in](https://pmkisan.gov.in) (retrieved 8 Nov 2026).

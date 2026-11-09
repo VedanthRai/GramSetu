@@ -10,8 +10,7 @@ maintainer at `vedanthrai01@gmail.com`. Please do not open a public issue for se
 
 ## Secrets
 
-* API keys live only in `.env` (`GNANI_API_KEY`, optional `ANTHROPIC_API_KEY`). `.env` is git-ignored and has never
-  been committed (checked with `python scripts/secret_scan.py`, which scans the working tree and the full git history).
+* API keys live only in `.env` (`GNANI_API_KEY`). `.env` is git-ignored and has never been committed (checked with `python scripts/secret_scan.py`, which scans the working tree and the full git history).
 * Keys are read by the backend only; the browser never receives them. Logs pass through a sanitiser that redacts keys,
   OTPs, phone and Aadhaar-like numbers (`backend/app/core/logging.py`).
 * If you fork this repo, never commit `.env`. If a key is ever exposed, rotate it in the Gnani dashboard immediately.
